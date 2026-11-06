@@ -181,28 +181,28 @@
 
 /* Phase: Night (Noche 19h-5h) - Distinct deep nocturnal ash/ocher atmosphere with AAA/AA contrast */
 [data-phase='night'] {
-  color-scheme: dark;
-  --paper: #201a16;
-  --paper-deep: #171310;
-  --paper-high: #2c241f;
-  --ink: #fdf7f0;
-  --ink-soft: #dccec0;
-  --ink-mute: #b8a694;
-  --safe: #8bb362;
-  --safe-ink: #bce688;
-  --attention: #e8b350;
-  --attention-ink: #ffd478;
-  --precaution: #e58742;
-  --precaution-ink: #ffb076;
-  --danger: #eb5442;
-  --danger-ink: #ff8c7a;
-  --extreme: #c93b68;
-  --extreme-ink: #ffa4bc;
-  --field: rgba(255, 255, 255, 0.08);
-  --field-strong: rgba(255, 255, 255, 0.15);
-  --hairline: rgba(255, 235, 215, 0.16);
-  --hairline-soft: rgba(255, 235, 215, 0.10);
-  --hairline-strong: rgba(255, 235, 215, 0.28);
+  color-scheme: light;
+  --paper: #f7efe3;
+  --paper-deep: #efe3d0;
+  --paper-high: #fffaf2;
+  --ink: #2b1608;
+  --ink-soft: #3b2616;
+  --ink-mute: #49301b;
+  --safe: #63883d;
+  --safe-ink: #243b12;
+  --attention: #b87808;
+  --attention-ink: #5b3900;
+  --precaution: #b95716;
+  --precaution-ink: #672400;
+  --danger: #8f1d12;
+  --danger-ink: #5e0f09;
+  --extreme: #6f1831;
+  --extreme-ink: #4a0d1d;
+  --field: rgba(43, 22, 8, 0.055);
+  --field-strong: rgba(43, 22, 8, 0.1);
+  --hairline: rgba(43, 22, 8, 0.22);
+  --hairline-soft: rgba(43, 22, 8, 0.14);
+  --hairline-strong: rgba(43, 22, 8, 0.58);
 }
 [data-phase='night'][data-risk='0'], [data-phase='night'][data-risk='safe'] {
   --sky-top: #1b1613;
