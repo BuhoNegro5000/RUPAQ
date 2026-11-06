@@ -10,3 +10,6 @@ screenshots
 .DS_Store
 Thumbs.db
 *.log
+
+.wrangler
+.vercel

@@ -34,11 +34,8 @@ type Feed = {
   >;
 };
 
-export async function getSenamhiAlerts(
-  platform: App.Platform | undefined,
-  location: Location
-): Promise<SenamhiAlert[]> {
-  const configured = platform?.env?.SENAMHI_ALERTS_URL;
+export async function getSenamhiAlerts(location: Location): Promise<SenamhiAlert[]> {
+  const configured = process.env.SENAMHI_ALERTS_URL;
   const local = (fallback.alertas ?? []) as Array<SenamhiAlert & { departamentos?: string[] }>;
 
   if (!configured) return filterForLocation(local, location);

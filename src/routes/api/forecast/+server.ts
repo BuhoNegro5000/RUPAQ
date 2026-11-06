@@ -3,7 +3,7 @@ import type { RequestHandler } from './$types';
 import { getForecastForLocation } from '$lib/server/forecast';
 import { getLocation } from '$lib/server/locations';
 
-export const GET: RequestHandler = async ({ url, platform, setHeaders }) => {
+export const GET: RequestHandler = async ({ url, setHeaders }) => {
   const ubigeo = url.searchParams.get('ubigeo') ?? '150101';
   if (!/^\d{6}$/.test(ubigeo)) {
     throw error(400, 'El ubigeo debe tener 6 dígitos.');
@@ -15,7 +15,7 @@ export const GET: RequestHandler = async ({ url, platform, setHeaders }) => {
   }
 
   try {
-    const { forecast, cacheStatus } = await getForecastForLocation(location, platform);
+    const { forecast, cacheStatus } = await getForecastForLocation(location);
     setHeaders({
       'cache-control': 'public, max-age=300, stale-while-revalidate=1800, stale-if-error=86400',
       'x-rupaq-cache': cacheStatus,
