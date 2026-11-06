@@ -815,6 +815,20 @@
     color: #f4e7d6;
   }
 
+  :global(.app-shell[data-phase='night']) .warning-callout {
+    background: rgba(127, 29, 29, 0.35);
+    border-color: #ef4444;
+  }
+
+  :global(.app-shell[data-phase='night']) .warning-callout strong,
+  :global(.app-shell[data-phase='night']) .warning-callout p {
+    color: #fecaca;
+  }
+
+  :global(.app-shell[data-phase='night']) .warning-icon {
+    color: #f87171;
+  }
+
   :global(.app-shell[data-phase='night']) .banner-epidemiologico {
     background: rgba(127, 29, 29, 0.2);
     border-color: rgba(239, 68, 68, 0.35);
