@@ -4,7 +4,6 @@
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
   import { get } from 'svelte/store';
-  import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import BottomNav from '$lib/components/BottomNav.svelte';
   import RailNav from '$lib/components/RailNav.svelte';
   import EmergencyFab from '$lib/components/EmergencyFab.svelte';
@@ -69,7 +68,6 @@
   }
 
   onMount(() => {
-    injectAnalytics({ mode: dev ? 'development' : 'production' });
     loadSettings();
     loadStoredLocation();
     const unsubscribe = selectedLocation.subscribe((location) => {
