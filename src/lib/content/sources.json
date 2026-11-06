@@ -1,0 +1,70 @@
+{
+  "version": "2026.11.1",
+  "revisado_por": "Pendiente de revisión por profesional de salud",
+  "fecha_revision": "2026-11-05",
+  "fuentes": [
+    {
+      "id": "minsa-calor",
+      "titulo": "MINSA: recomendaciones frente al golpe de calor",
+      "institucion": "Ministerio de Salud del Perú",
+      "url": "https://www.gob.pe/institucion/minsa/noticias/1329637-golpe-de-calor-medidas-para-prevenir-un-shock-termico-durante-el-verano",
+      "uso": "Recomendaciones de prevención e hidratación."
+    },
+    {
+      "id": "minsa-guia-2026",
+      "titulo": "Guía técnica para enfrentar olas de calor extremo",
+      "institucion": "MINSA / Resolución Ministerial N.° 150-2026-MINSA",
+      "url": "https://www.gob.pe/institucion/minsa",
+      "uso": "Marco técnico de referencia para el contenido provisional."
+    },
+    {
+      "id": "ops-calor",
+      "titulo": "Guía para acciones basadas en la salud frente a olas de calor",
+      "institucion": "OPS/OMS",
+      "url": "https://iris.paho.org/bitstreams/9b4603e2-c72c-491f-98b9-e6089f01ca09/download",
+      "uso": "Enfoque de salud pública, grupos vulnerables y comunicación de riesgo."
+    },
+    {
+      "id": "oms-calor",
+      "titulo": "Heat and health",
+      "institucion": "Organización Mundial de la Salud",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health",
+      "uso": "Definición de ola de calor y efectos en salud."
+    },
+    {
+      "id": "nws-heat-index",
+      "titulo": "The Heat Index Equation",
+      "institucion": "National Weather Service (EE. UU.)",
+      "url": "https://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml",
+      "uso": "Cálculo del índice de calor con la regresión de Rothfusz y ajustes."
+    },
+    {
+      "id": "open-meteo",
+      "titulo": "Open-Meteo Weather API",
+      "institucion": "Open-Meteo",
+      "url": "https://open-meteo.com/en/terms",
+      "uso": "Datos meteorológicos y de calidad del aire. Licencia CC BY 4.0. Uso no comercial."
+    },
+    {
+      "id": "senamhi",
+      "titulo": "SENAMHI: avisos y pronóstico meteorológico",
+      "institucion": "Servicio Nacional de Meteorología e Hidrología del Perú",
+      "url": "https://www.senamhi.gob.pe",
+      "uso": "Referencia oficial y adaptador de avisos cuando exista feed autorizado."
+    },
+    {
+      "id": "ubigeo",
+      "titulo": "Ubigeo distrital aumentado (INEI)",
+      "institucion": "jmcastagnetto/ubigeo-peru-aumentado, datos INEI/RENIEC",
+      "url": "https://github.com/jmcastagnetto/ubigeo-peru-aumentado",
+      "uso": "Departamentos, provincias, distritos y coordenadas para la búsqueda y la geolocalización."
+    },
+    {
+      "id": "emergencias",
+      "titulo": "Teléfonos de emergencia del Estado peruano",
+      "institucion": "Plataforma del Estado Peruano",
+      "url": "https://www.gob.pe/547-telefonos-de-emergencia",
+      "uso": "Números de SAMU, Bomberos, Policía y EsSalud."
+    }
+  ]
+}

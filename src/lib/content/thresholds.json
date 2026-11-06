@@ -1,0 +1,46 @@
+{
+  "version": "2026.11.1",
+  "revisado_por": "Pendiente de revisión por profesional de salud",
+  "fecha_revision": "2026-11-05",
+  "metodo": "Índice de calor por hora (Rothfusz/NWS y Steadman). Umbrales provisionales por zona climática, ajustables por perfil.",
+  "nota": "Los umbrales son una herramienta de orientación comunitaria y no un diagnóstico. Deben validarse con MINSA/SENAMHI antes de una campaña pública.",
+  "zonas": {
+    "costa_norte": {
+      "attention": 32,
+      "precaution": 36,
+      "danger": 41,
+      "extreme": 47
+    },
+    "costa_central": {
+      "attention": 29,
+      "precaution": 34,
+      "danger": 39,
+      "extreme": 45
+    },
+    "sierra": {
+      "attention": 24,
+      "precaution": 28,
+      "danger": 33,
+      "extreme": 38
+    },
+    "amazonia": {
+      "attention": 31,
+      "precaution": 36,
+      "danger": 41,
+      "extreme": 47
+    }
+  },
+  "ajuste_perfil": {
+    "nino": -2,
+    "embarazo": -2,
+    "adulto_mayor": -2,
+    "trabajo_exterior": -1,
+    "enfermedad_cronica": -2
+  },
+  "ajuste_maximo": -3,
+  "referencias": [
+    "NWS Heat Index (Rothfusz, 1990)",
+    "Steadman, 1979",
+    "OPS/OMS: guía para acciones basadas en la salud frente a olas de calor"
+  ]
+}

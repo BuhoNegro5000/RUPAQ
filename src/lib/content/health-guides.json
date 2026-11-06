@@ -1,0 +1,366 @@
+{
+  "version": "2026.11.1",
+  "revisado_por": "Pendiente de revisión por profesional de salud",
+  "fecha_revision": "2026-11-05",
+  "aviso": "Orientación general. No reemplaza atención médica ni diagnostica.",
+  "condiciones": [
+    {
+      "slug": "golpe-de-calor",
+      "titulo": "Golpe de calor",
+      "resumen": "La piel está muy caliente y la persona confunde o se desmaya.",
+      "urgencia": "EMERGENCIA",
+      "urgenciaNivel": 4,
+      "icono": "thermometer-sun",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Toca su piel",
+          "texto": "En un golpe de calor la piel está muy caliente y puede dejar de sudar."
+        },
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Mira su conducta",
+          "texto": "Si confunde, se marea, convulsiona o no responde después del calor, trátalo como una emergencia."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Llama al 106",
+          "texto": "Di la dirección exacta, tu distrito y que sospechas un golpe de calor."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Llévala a la sombra",
+          "texto": "Muévela a un cuarto fresco o bajo sombra. No la dejes sola."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Enfría su cuerpo",
+          "texto": "Quítale el exceso de ropa, mójala con agua fresca y abanícala. Enfría primero la cabeza, el cuello y las axilas."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Si está consciente",
+          "texto": "Dale sorbos de agua, despacio. Detente si vomita."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Si se desmaya",
+          "texto": "Si respira, ponla de costado y vigila su respiración hasta que llegue la ayuda."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No la dejes sola",
+          "texto": "No la cubras con frazadas, no la metas en hielo y no le des alcohol ni medicinas para la fiebre."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo llamar",
+          "titulo": "Llama al 106 ahora",
+          "texto": "Confusión, convulsión, desmayo, dificultad para respirar o piel muy caliente son señales de emergencia. No esperes a que baje la fiebre."
+        }
+      ]
+    },
+    {
+      "slug": "sincope-por-calor",
+      "titulo": "Síncope por calor",
+      "resumen": "Se desmayó de pie o después de estar al sol.",
+      "urgencia": "URGENTE",
+      "urgenciaNivel": 3,
+      "icono": "cloud-sun",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Se puso pálida y sudorosa",
+          "texto": "Se desmayó de pie o después de estar al sol. La piel puede estar fría y sudorosa."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Acuéstala a la sombra",
+          "texto": "Ponla boca arriba y eleva sus piernas unos 30 centímetros."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Afloja la ropa",
+          "texto": "Refresca la frente y el cuello con un paño húmedo."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Si despierta",
+          "texto": "Dale agua despacio y no la levantes rápido. Espera unos minutos antes de sentarla."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Si no despierta",
+          "texto": "Llama al 106 y revisa que esté respirando. Si respira, ponla de costado."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No le des agua dormida",
+          "texto": "No le des líquidos si está inconsciente. No la levantes de golpe ni la dejes sola."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo llamar",
+          "titulo": "Llama al 106",
+          "texto": "Si no despierta en un minuto, vuelve a desmayarse o tiene convulsiones."
+        }
+      ]
+    },
+    {
+      "slug": "agotamiento-por-calor",
+      "titulo": "Agotamiento por calor",
+      "resumen": "Suda mucho, está débil y con náuseas después del calor.",
+      "urgencia": "URGENTE",
+      "urgenciaNivel": 3,
+      "icono": "droplets",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Mucho cansancio y sudor",
+          "texto": "Suda mucho, está débil, mareada, con dolor de cabeza o náuseas después del calor."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Para y busca fresco",
+          "texto": "Deja lo que está haciendo y siéntala en un lugar fresco o a la sombra."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Rehidrata con agua y sales",
+          "texto": "Dale agua fresca y suero oral a sorbos lentos. La reposición de electrolitos es clave si ha sudado profusamente."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Enfría y descansa",
+          "texto": "Afloja la ropa, ponle un paño húmedo en la nuca y déjala descansar al menos 30 minutos."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No sigas con el esfuerzo",
+          "texto": "No le des alcohol ni bebidas azucaradas. No la mandes a caminar ni a trabajar."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo llamar",
+          "titulo": "Llama al 106 si empeora",
+          "texto": "Si vomita, no puede tomar agua, confunde, se desmaya o no mejora en una hora."
+        }
+      ]
+    },
+    {
+      "slug": "calambres-por-calor",
+      "titulo": "Calambres por calor",
+      "resumen": "Dolor o tirón en piernas o brazos después de sudar.",
+      "urgencia": "ATENCIÓN",
+      "urgenciaNivel": 2,
+      "icono": "zap",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Un tirón que duele",
+          "texto": "Aparece en piernas, brazos o abdomen después de sudar mucho o hacer esfuerzo con calor."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Detente y busca sombra",
+          "texto": "Para la actividad y siéntate en un lugar fresco."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Estira suave",
+          "texto": "Estira el músculo con cuidado y masajea la zona."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Repón agua y sales minerales",
+          "texto": "No tomes solo agua pura en exceso: el sudor eliminó sodio. Bebe suero oral, agua con una pizca de sal y limón o una bebida con electrolitos a sorbos lentos para evitar la hiponatremia."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No fuerces el músculo",
+          "texto": "No sigas haciendo deporte ni masajees con fuerza. No tomes alcohol."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo llamar",
+          "titulo": "Llama si hay señales de alarma",
+          "texto": "Si los calambres duran más de una hora, hay dolor en el pecho, falta de aire o la orina se vuelve muy oscura."
+        }
+      ]
+    },
+    {
+      "slug": "erupcion-por-calor",
+      "titulo": "Erupción por calor",
+      "resumen": "Granitos pequeños y con picazón en cuello, pecho o pliegues.",
+      "urgencia": "LEVE",
+      "urgenciaNivel": 1,
+      "icono": "sparkles",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Granitos con picazón",
+          "texto": "Son bultitos pequeños, rojos o transparentes, en el cuello, el pecho o los pliegues de la piel."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Enfría y seca la piel",
+          "texto": "Lleva a la persona a un lugar fresco, baña con agua fresca y seca sin frotar."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Usa ropa suelta",
+          "texto": "Ropa de algodón, ligera y de colores claros. Deja respirar la piel."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Alivia la picazón",
+          "texto": "Compresas frescas por ratos cortos. No revientes los granitos."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No tapes la piel",
+          "texto": "Evita cremas espesas, talco, ropa ajustada y rasquillarse. No revientes las ampollas."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo llamar",
+          "titulo": "Busca atención si se infecta",
+          "texto": "Si hay pus, fiebre, dolor que aumenta o una zona roja que crece, acude a un establecimiento de salud."
+        }
+      ]
+    },
+    {
+      "slug": "ola-de-calor-y-embarazo",
+      "titulo": "Ola de calor y embarazo",
+      "resumen": "El calor extremo exige más descanso, agua y control prenatal.",
+      "urgencia": "ESPECIAL",
+      "urgenciaNivel": 2,
+      "icono": "heart-pulse",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Por qué importa",
+          "titulo": "Tu cuerpo regula peor el calor",
+          "texto": "En el embarazo el cuerpo se calienta más rápido. La deshidratación puede adelantar contracciones."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Evita el sol de 10 a 4",
+          "texto": "Programa tus salidas temprano o al final de la tarde y camina por la sombra."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Toma agua seguido",
+          "texto": "Ten una botella cerca y toma sorbos cada 20 o 30 minutos."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Descansa de lado",
+          "texto": "Acuéstate del lado izquierdo en un lugar fresco. Evita quedarte boca arriba mucho tiempo."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Siente a tu bebé",
+          "texto": "Observa sus movimientos. Si notas menos movimiento de lo habitual, busca atención ese mismo día."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No te sobrecalientes",
+          "texto": "Evita baños muy calientes, saunas, alcohol y esfuerzos fuertes. No suspendas tus controles."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo llamar",
+          "titulo": "Llama al 106 o ve a emergencia",
+          "texto": "Dolor de cabeza fuerte, visión borrosa, hinchazón repentina, sangrado, contracciones o el bebé se mueve menos."
+        }
+      ]
+    },
+    {
+      "slug": "dengue-y-clima",
+      "titulo": "Dengue y calor",
+      "resumen": "El calor acelera el zancudo (5 a 7 días). Fiebre alta, dolor detrás de los ojos y dolor articular.",
+      "urgencia": "URGENTE",
+      "urgenciaNivel": 3,
+      "icono": "bug",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Fiebre y dolor característico",
+          "texto": "Fiebre repentina y alta, dolor intenso detrás de los ojos ('dolor retroocular'), dolor en músculos y articulaciones ('fiebre quebrantahuesos') y manchas rojas en la piel."
+        },
+        {
+          "kind": "recognize",
+          "label": "Signos de alarma CDC",
+          "titulo": "Alerta crítica de dengue",
+          "texto": "Dolor abdominal intenso y continuo, vómitos persistentes (más de 3 en 1 hora), sangrado de encías o nariz, somnolencia o decaimiento extremo. Requiere hospitalización urgente."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Hidratación oral inmediata",
+          "texto": "Bebe abundantes líquidos: suero oral, agua hervida o jugos de fruta natural. El calor y la fiebre aumentan rápidamente el riesgo de choque por deshidratación."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Acude al centro de salud",
+          "texto": "Ve al establecimiento del MINSA/EsSalud más cercano para evaluación clínica y prueba de descarte. La atención temprana previene formas graves."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué NUNCA hacer",
+          "titulo": "No te automediques",
+          "texto": "NO tomes aspirina, ibuprofeno, naproxeno ni diclofenaco (AINEs). Estos fármacos aumentan el riesgo de hemorragias mortales. Solo se indica paracetamol bajo dosis médica."
+        },
+        {
+          "kind": "do",
+          "label": "Control en casa",
+          "titulo": "Lava, escobilla y tapa",
+          "texto": "El calor reduce el ciclo del zancudo a 5-7 días. Lava con escobilla y tapa herméticamente baldes, tanques y bidones de agua cada 3 días para desprender los huevos de Aedes."
+        },
+        {
+          "kind": "call",
+          "label": "Líneas de ayuda",
+          "titulo": "Línea 113 MINSA / 106 SAMU",
+          "texto": "Llama gratis a la Línea 113 opción 5 (MINSA orientación dengue) o al 106 (SAMU) ante sangrado, desmayo o signos de alarma."
+        }
+      ]
+    }
+  ]
+}

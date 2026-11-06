@@ -1,0 +1,65 @@
+{
+  "version": "2026.11.1",
+  "revisado_por": "Pendiente de revisión por profesional de salud",
+  "fecha_revision": "2026-11-05",
+  "base": {
+    "safe": {
+      "dawn": "El calor está tranquilo. Aprovecha la mañana para ventilar tu casa y moverte.",
+      "day": "Hoy el calor está bajo control. Aun así, toma agua antes de tener sed.",
+      "afternoon": "El día está amable. Si sales, lleva agua y busca sombra cuando puedas.",
+      "night": "La noche está fresca. Revisa que mañana tengas agua y un lugar fresco listo."
+    },
+    "attention": {
+      "dawn": "Hoy sube la temperatura. Deja agua a mano y planea tus salidas antes del mediodía.",
+      "day": "El calor empieza a sentirse. Toma agua cada hora y evita el sol fuerte al mediodía.",
+      "afternoon": "A esta hora el calor aprieta. Baja el ritmo, busca sombra y toma agua aunque no tengas sed.",
+      "night": "La noche no enfría del todo. Duerme con ventilación y deja agua junto a la cama."
+    },
+    "precaution": {
+      "dawn": "Hoy hará calor fuerte desde temprano. Adelanta tus mandados y ten agua para todo el día.",
+      "day": "Entre las 11 y las 4 evita el sol directo. Si sales, sombrero, sombra y agua cada 30 minutos.",
+      "afternoon": "Hoy el calor se siente pesado. Suelta lo que pueda esperar y quédate en el lugar más fresco.",
+      "night": "Costará dormir por el calor. Ventila, usa ropa ligera y revisa a quienes viven solos."
+    },
+    "danger": {
+      "dawn": "Hoy será un día peligroso. No salgas entre las 11 y las 4; guarda agua, protege tu piel del sol extremo y avisa a tu familia.",
+      "day": "Hoy no salgas entre las 11 y las 4. Si tienes que hacerlo, sombrero de ala ancha, agua cada 20 minutos y camina por la sombra.",
+      "afternoon": "Horas más peligrosas. Si supera 35 °C, el ventilador solo no basta: humedece tu piel con paños frescos y cuida a niños y mayores.",
+      "night": "El cuerpo sigue cargado de calor. Bebe agua, ventila y no hagas esfuerzos hasta que baje la temperatura."
+    },
+    "extreme": {
+      "dawn": "Hoy el calor puede ser extremo. Quédate en casa, cierra cortinas y prepara agua y un lugar fresco para toda la familia.",
+      "day": "No salgas al sol. El calor puede enfermarte rápido. Si usas ventilador a más de 35 °C, moja tu piel con agua para no recalentarte.",
+      "afternoon": "No salgas y no hagas esfuerzos. Si alguien se marea, confunde o deja de responder, llama al 106 de inmediato.",
+      "night": "La noche seguirá muy caliente. Refréscate con paños húmedos, toma agua y no duermas en un cuarto sin ventilación."
+    }
+  },
+  "perfil": {
+    "nino": {
+      "precaution": "Hoy cuida a los niños del sol entre las 11 y las 4. Ofréceles agua cada 30 minutos.",
+      "danger": "Hoy no saques a los niños entre las 11 y las 4. Dales agua cada 20 minutos y vigila su sueño.",
+      "extreme": "No expongas a los niños al calor. Mantenlos en un cuarto fresco y dales agua cada 15 minutos."
+    },
+    "embarazo": {
+      "precaution": "Hoy descansa más y evita el sol entre las 11 y las 4. Toma agua seguido y no te acuestes boca arriba.",
+      "danger": "Hoy no salgas entre las 11 y las 4. Si estás embarazada, descansa de lado y llama si sientes mareo o contracciones.",
+      "extreme": "Quédate en un lugar fresco. Si estás embarazada, acuéstate de lado y busca atención si hay mareo o sangrado."
+    },
+    "adulto_mayor": {
+      "precaution": "Hoy revisa a los adultos mayores cada dos horas. Que tomen agua y estén en un cuarto ventilado.",
+      "danger": "Hoy no dejes solo a un adulto mayor. Revisa que tome agua y que el cuarto esté fresco.",
+      "extreme": "Mantén a los adultos mayores en el lugar más fresco. Revisa su respiración y llama al 106 si se confunden."
+    },
+    "trabajo_exterior": {
+      "precaution": "Si trabajas al aire libre, para 15 minutos a la sombra cada hora. Toma suero oral o agua con electrolitos, no solo agua sola.",
+      "danger": "Hoy reduce el trabajo al aire libre entre las 11 y las 4. Pausas de 15 min cada 45 min y reposición con sales o agua con limón y sal.",
+      "extreme": "Peligro severo para trabajo exterior. Turnos mínimos, sombra obligatoria, protector solar y rehidratación con electrolitos cada 15 min."
+    },
+    "enfermedad_cronica": {
+      "precaution": "Toma tus medicamentos a la hora y guárdalos en un lugar fresco (< 25 °C). Si tomas diuréticos o pastillas para la presión, bebe más agua.",
+      "danger": "No salgas de 11 a 4. Si tomas diuréticos, enalapril o losartán, el calor baja tu presión: vigila mareos y nunca suspendas sin consultar a tu médico.",
+      "extreme": "Quédate en el lugar más fresco. Protege tu insulina del calor (< 30 °C). Si sientes confusión, dolor de pecho o falta de aire, llama al 106."
+    }
+  },
+  "prioridad_perfil": ["embarazo", "nino", "adulto_mayor", "enfermedad_cronica", "trabajo_exterior"]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "RUPAQ — Calor y Salud",
+  "short_name": "RUPAQ",
+  "description": "Asistente táctico frente al calor extremo en Perú. Sensación térmica por distrito, alertas médicas tempranas, primeros auxilios y puntos de hidratación. Gratis, sin registro y listo sin conexión.",
+  "lang": "es-PE",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "window-controls-overlay"],
+  "orientation": "portrait-primary",
+  "background_color": "#201a16",
+  "theme_color": "#201a16",
+  "categories": ["health", "weather", "medical", "navigation"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Puntos de Hidratación",
+      "short_name": "Agua",
+      "description": "Bebederos gratuitos, refugios con aire acondicionado y tiendas 24h",
+      "url": "/mas/hidratacion",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Emergencia 106 / 116",
+      "short_name": "Emergencia",
+      "description": "Llamada inmediata al SAMU y guía de primeros auxilios",
+      "url": "/emergencia",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Síntomas de Calor",
+      "short_name": "Síntomas",
+      "description": "Cómo reconocer y actuar ante golpe de calor",
+      "url": "/sintomas",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Pronóstico de 7 Días",
+      "short_name": "Días",
+      "description": "Pronóstico térmico extendido para tu distrito",
+      "url": "/dias",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

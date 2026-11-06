@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Inicio: Pronóstico de hoy y sensación térmica en vivo -->
+  <url>
+    <loc>https://rupaq.pe/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/" />
+  </url>
+
+  <!-- Pronóstico extendido 7 días -->
+  <url>
+    <loc>https://rupaq.pe/dias</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/dias" />
+  </url>
+
+  <!-- Herramienta interactiva de Puntos de Hidratación -->
+  <url>
+    <loc>https://rupaq.pe/mas/hidratacion</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/hidratacion" />
+  </url>
+
+  <!-- Guías de Salud y Síntomas -->
+  <url>
+    <loc>https://rupaq.pe/sintomas</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/sintomas/golpe-de-calor</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas/golpe-de-calor" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/sintomas/agotamiento-por-calor</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas/agotamiento-por-calor" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/sintomas/sincope-por-calor</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas/sincope-por-calor" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/sintomas/calambres-por-calor</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas/calambres-por-calor" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/sintomas/erupcion-por-calor</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas/erupcion-por-calor" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/sintomas/ola-de-calor-y-embarazo</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas/ola-de-calor-y-embarazo" />
+  </url>
+
+  <!-- Emergencia y Triage Inmediato (SAMU 106 / Bomberos 116) -->
+  <url>
+    <loc>https://rupaq.pe/emergencia</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/emergencia" />
+  </url>
+
+  <!-- Selector de Distrito y Ubicación -->
+  <url>
+    <loc>https://rupaq.pe/ubicacion</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/ubicacion" />
+  </url>
+
+  <!-- Centro de Recursos y Más -->
+  <url>
+    <loc>https://rupaq.pe/mas</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/ola-de-calor</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/ola-de-calor" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/plan</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/plan" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/lugares</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/lugares" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/perfil</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/perfil" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/accesibilidad</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/accesibilidad" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/fuentes</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/fuentes" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/acerca</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/acerca" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/sintomas/dengue-y-clima</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/sintomas/dengue-y-clima" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/dengue-y-clima</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/dengue-y-clima" />
+  </url>
+
+  <url>
+    <loc>https://rupaq.pe/mas/privacidad</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://rupaq.pe/mas/privacidad" />
+  </url>
+</urlset>

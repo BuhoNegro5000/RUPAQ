@@ -1,0 +1,50 @@
+{
+  "version": "2026.11.1",
+  "revisado_por": "Pendiente de revisión por profesional de salud",
+  "fecha_revision": "2026-11-05",
+  "planes": [
+    {
+      "slug": "casa",
+      "titulo": "En casa",
+      "intro": "Prepara la casa antes de que llegue el día más caluroso.",
+      "items": [
+        "Ten agua segura para toda la familia y una botella junto a cada cama.",
+        "Elige el cuarto más fresco y cierra cortinas o persianas durante el día.",
+        "Abre las ventanas de noche si el aire de afuera está más fresco.",
+        "Conserva tus medicinas e insulina en el lugar más fresco y bajo de la casa (< 25 °C, o en termo si no hay refrigerador).",
+        "Si hace más de 35 °C, no dependas solo del ventilador: moja tu piel y cabeza con paños húmedos.",
+        "Identifica a la persona mayor o con enfermedad crónica que vive cerca y acuerda revisarla.",
+        "Ten paños, un balde de agua y un ventilador o abanico a mano.",
+        "Carga el celular y guarda el número 106 en un lugar visible.",
+        "Nunca dejes a un niño, una persona mayor o una mascota dentro de un auto."
+      ]
+    },
+    {
+      "slug": "colegio",
+      "titulo": "En el colegio",
+      "intro": "Una rutina corta que protege a los chicos y al personal.",
+      "items": [
+        "Asegura agua para todos y vasos o botellas individuales.",
+        "Mueve Educación Física y recreos largos antes de las 10 o después de las 4.",
+        "Marca zonas de sombra y revisa que las aulas se ventilen.",
+        "Acuerda que un adulto revise a los niños más pequeños cada hora.",
+        "Ten un botiquín, paños fríos y el protocolo de llamada al 106.",
+        "Revisa que ningún niño se quede en un vehículo o en un patio sin sombra."
+      ]
+    },
+    {
+      "slug": "trabajo",
+      "titulo": "En el trabajo",
+      "intro": "Para obras, chacras, reparto, mercados y trabajo al aire libre.",
+      "items": [
+        "Pausas de 15 minutos a la sombra cada hora en días de calor fuerte.",
+        "Agua y suero oral o agua con electrolitos disponibles para reponer sales perdidas por el sudor.",
+        "Turnos rotativos y trabajo pesado fuera de las horas centrales (10 a. m. a 4 p. m.).",
+        "Compañero de vigilancia: nadie trabaja solo en el calor extremo.",
+        "Sombra, casco con cubre nuca o sombrero de ala ancha, ropa de manga larga transpirable y protector solar.",
+        "Capacitación breve para reconocer mareo, confusión, calambres y golpe de calor.",
+        "Plan de traslado y número del centro de salud más cercano."
+      ]
+    }
+  ]
+}

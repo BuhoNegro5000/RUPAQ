@@ -1,0 +1,49 @@
+{
+  "samu": "106",
+  "bomberos": "116",
+  "policia": "105",
+  "essalud": "117",
+  "infosalud": "113",
+  "linea100": "100",
+  "defensa_civil": "115",
+  "nota": "Los números son gratuitos desde teléfonos fijos y móviles en Perú. La cobertura de ambulancias varía por distrito.",
+  "actualizado": "2026-11-05",
+  "triage": {
+    "pregunta": "¿Está confundido, desmayado o no responde?",
+    "ayuda": "Piensa en cambios repentinos después del calor: no sabe dónde está, habla sin sentido, se desmayó o no despierta.",
+    "si": "Sí, llamar ya",
+    "no": "No, ver síntomas"
+  },
+  "emergencia": {
+    "titulo": "Llama ahora",
+    "bajada": "Primero llama. Mientras llega la ayuda, enfría a la persona.",
+    "pasos": [
+      {
+        "titulo": "Llama al 106",
+        "texto": "Di la dirección exacta, el distrito y que sospechas un golpe de calor. No cuelgues hasta que te lo indiquen."
+      },
+      {
+        "titulo": "Llévala a la sombra",
+        "texto": "Muévela a un cuarto fresco o bajo sombra. No la dejes sola ni la cubras con frazadas."
+      },
+      {
+        "titulo": "Enfría sin parar",
+        "texto": "Quítale el exceso de ropa, mójala con agua fresca y abanícala. Empieza por la cabeza, el cuello y las axilas."
+      },
+      {
+        "titulo": "Vigila su respiración",
+        "texto": "Si está inconsciente y respira, ponla de costado. Si deja de respirar, sigue las indicaciones del 106."
+      }
+    ],
+    "no_hacer": [
+      "No le des líquidos si está inconsciente, confundida o vomita.",
+      "No le des alcohol ni medicinas para la fiebre.",
+      "No la dejes sola esperando la ambulancia."
+    ],
+    "otros": [
+      { "label": "Bomberos", "numero": "116", "detalle": "Rescate y emergencias" },
+      { "label": "EsSalud", "numero": "117", "detalle": "Ambulancia para asegurados" },
+      { "label": "Policía", "numero": "105", "detalle": "Apoyo en la vía pública" }
+    ]
+  }
+}

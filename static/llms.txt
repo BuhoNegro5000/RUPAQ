@@ -1,0 +1,29 @@
+# RUPAQ · Calor Extremo y Salud para el Perú
+> Asistente táctico de calor extremo, sensación térmica en tiempo real, primeros auxilios y red de hidratación urbana para todos los distritos del Perú. Desarrollado por Green Owl Labs.
+
+## Resumen del Proyecto
+- **Nombre oficial:** RUPAQ
+- **Organización responsable:** Green Owl Labs (Ciencia de datos ambientales y salud pública)
+- **Ámbito geográfico:** Perú (Costa, Sierra, Selva; con cobertura distrital en Lima, Callao, Piura, Ica, Loreto, Ucayali, San Martín, etc.)
+- **URL Canónica:** https://rupaq.pe
+- **Idioma principal:** es-PE (Español de Perú)
+- **Modelo de acceso:** 100% Gratuito, código abierto para el ciudadano, sin registro, sin cookies publicitarias, con funcionamiento completo sin conexión (PWA).
+
+## Módulos y Funcionalidades Principales
+- [Hoy](https://rupaq.pe/): Monitor en tiempo real de temperatura ambiental, sensación térmica calculada (Heat Index / Humidex), radiación UV, calidad del aire y arco dinámico de 24 horas (día y noche).
+- [7 Días](https://rupaq.pe/dias): Pronóstico de riesgo extendido a 7 días con rangos térmicos de mínima y máxima y advertencia de olas de calor nocturnas.
+- [Puntos de Hidratación](https://rupaq.pe/mas/hidratacion): Localizador interactivo y mapa Leaflet con bebederos públicos gratuitos, refugios climáticos climatizados con A/C y tiendas 24h, cálculo de distancia GPS y cómo llegar con Google Maps.
+- [Guías de Síntomas](https://rupaq.pe/sintomas): Protocolos de salud frente a afecciones por estrés térmico.
+- [Emergencia Inmediata](https://rupaq.pe/emergencia): Triage médico de urgencia y enlaces directos al SAMU 106 y Bomberos 116.
+
+## Protocolos Médicos Críticos
+- **Golpe de calor (Heat Stroke):** Emergencia con riesgo vital. Temperatura corporal > 40°C, alteración de conciencia, confusión o desmayo, piel caliente y enrojecida (con o sin sudor). Acción: Llamar al SAMU 106 inmediatamente y enfriar activamente con paños fríos en cuello, axilas e ingle en los primeros 10 minutos.
+- **Agotamiento por calor:** Sudoración profusa, piel fría y pegajosa, mareos, náuseas, pulso débil y rápido. Acción: Trasladar a sombra, aflojar ropa apretada y administrar agua fresca o solución de electrolitos en pequeños sorbos.
+
+## Fuentes Científicas y Umbrales
+- Datos meteorológicos: Senamhi (Perú) y Open-Meteo.
+- Algoritmo de sensación térmica: Rothfusz / NWS NOAA adaptado a microclimas húmedos de la costa peruana y selva amazónica.
+- Umbrales de riesgo: Seguro (<27°C), Precaución (27°C - 32°C), Alerta (33°C - 41°C), Peligro (42°C - 53°C), Extremo (≥54°C).
+
+## Documentación Completa
+- [Versión extendida para LLMs](https://rupaq.pe/llms-full.txt): Base de conocimiento exhaustiva para asistentes conversacionales.

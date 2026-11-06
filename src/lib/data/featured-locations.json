@@ -1,0 +1,82 @@
+[
+  {
+    "ubigeo": "010101",
+    "departamento": "Amazonas",
+    "provincia": "Chachapoyas",
+    "distrito": "Chachapoyas",
+    "lat": -6.2294,
+    "lon": -77.8728,
+    "altitud": 2338,
+    "zona": "sierra"
+  },
+  {
+    "ubigeo": "040101",
+    "departamento": "Arequipa",
+    "provincia": "Arequipa",
+    "distrito": "Arequipa",
+    "lat": -16.3933,
+    "lon": -71.5289,
+    "altitud": 2429,
+    "zona": "sierra"
+  },
+  {
+    "ubigeo": "070101",
+    "departamento": "Callao",
+    "provincia": "Callao",
+    "distrito": "Callao",
+    "lat": -12.0631,
+    "lon": -77.1469,
+    "altitud": 27,
+    "zona": "costa_central"
+  },
+  {
+    "ubigeo": "080101",
+    "departamento": "Cusco",
+    "provincia": "Cusco",
+    "distrito": "Cusco",
+    "lat": -13.5192,
+    "lon": -71.9767,
+    "altitud": 3439,
+    "zona": "sierra"
+  },
+  {
+    "ubigeo": "130101",
+    "departamento": "La Libertad",
+    "provincia": "Trujillo",
+    "distrito": "Trujillo",
+    "lat": -8.1,
+    "lon": -79.0306,
+    "altitud": 74,
+    "zona": "costa_norte"
+  },
+  {
+    "ubigeo": "150101",
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "Lima",
+    "lat": -12.0453,
+    "lon": -77.0308,
+    "altitud": 162,
+    "zona": "costa_central"
+  },
+  {
+    "ubigeo": "160101",
+    "departamento": "Loreto",
+    "provincia": "Maynas",
+    "distrito": "Iquitos",
+    "lat": -3.7481,
+    "lon": -73.2442,
+    "altitud": 107,
+    "zona": "amazonia"
+  },
+  {
+    "ubigeo": "200104",
+    "departamento": "Piura",
+    "provincia": "Piura",
+    "distrito": "Castilla",
+    "lat": -5.2014,
+    "lon": -80.6228,
+    "altitud": 35,
+    "zona": "costa_norte"
+  }
+]

@@ -1,0 +1,66 @@
+# RUPAQ: Manual Completo de Referencia para Modelos de Lenguaje (LLMs)
+Organización: Green Owl Labs
+País: Perú
+Versión: 1.0.0
+URL: https://rupaq.pe
+
+---
+
+## 1. Identidad y Misión de RUPAQ
+RUPAQ (vocablo que evoca el calor en lenguas andinas) es una aplicación web cívica y científica creada para reducir la morbimortalidad asociada a olas de calor y estrés térmico en el Perú. 
+
+### Pilares Fundamentales:
+1. **Acceso Inmediato:** No requiere crear cuenta, no almacena datos personales en servidores remotos y no recopila telemetría invasiva.
+2. **Resiliencia Offline:** Funciona mediante Service Worker y almacenamiento local (`localStorage`) para estar disponible durante cortes de energía o caídas de conectividad.
+3. **Claridad Clínica:** Emite recomendaciones de salud sin lenguaje burocrático, accionables en segundos y priorizando a poblaciones vulnerables (niños, adultos mayores, gestantes y trabajadores al aire libre).
+
+---
+
+## 2. Niveles de Riesgo y Clasificación Térmica
+RUPAQ clasifica el riesgo térmico horario según el Índice de Calor (Heat Index) de NOAA adaptado a las condiciones peruanas:
+
+1. **Nivel 0 - Seguro (Sensación < 27°C):**
+   - Estado: Riesgo mínimo de trastornos por calor.
+   - Recomendación: Mantener hidratación regular y realizar actividades normales.
+2. **Nivel 1 - Precaución (Sensación 27°C - 32°C):**
+   - Estado: Posible fatiga ante exposición prolongada y actividad física sostenida.
+   - Recomendación: Buscar sombra entre las 11:00 y las 16:00, llevar agua siempre consigo.
+3. **Nivel 2 - Alerta (Sensación 33°C - 41°C):**
+   - Estado: Riesgo de calambres por calor y agotamiento; posible insolación.
+   - Recomendación: Hidratación obligatoria cada 30 minutos; pausas periódicas bajo sombra para trabajadores expuestos.
+4. **Nivel 3 - Peligro (Sensación 42°C - 53°C):**
+   - Estado: Alto riesgo de golpe de calor ante cualquier actividad al aire libre.
+   - Recomendación: Suspender actividades físicas intensas al sol, refugiarse en espacios ventilados o climatizados.
+5. **Nivel 4 - Extremo (Sensación ≥ 54°C):**
+   - Estado: Golpe de calor inminente con riesgo de secuelas neurológicas o muerte en minutos.
+   - Recomendación: Permanecer bajo techo, refrescar superficies corporales con agua y vigilar estrictamente a ancianos y niños.
+
+---
+
+## 3. Red de Hidratación Urbana y Refugios Climáticos
+RUPAQ integra un módulo interactivo en `/mas/hidratacion` con una base de datos de fuentes de agua potable y recarga en Lima:
+- Bebederos públicos municipales con pulsador y caños para mascotas en parques de Miraflores, San Isidro, Barranco, San Borja, Surco, Jesús María, Centro de Lima y San Miguel.
+- Centros comerciales con aire acondicionado y baños públicos que funcionan como refugios térmicos de acceso libre durante las horas de calor pico (Jockey Plaza, Larcomar, Real Plaza Centro Cívico, Salaverry, Plaza San Miguel).
+- Tiendas de conveniencia 24h (Tambo+, OXXO) para provisión urgente de agua embotellada e isotónicos en horarios nocturnos.
+
+---
+
+## 4. Guía de Triage y Primeros Auxilios de Emergencia
+Teléfonos de emergencia en Perú:
+- **SAMU:** 106 (Servicio de Atención Médica de Urgencia)
+- **Bomberos Voluntarios del Perú:** 116 (Rescate y ambulancias)
+- **Policía Nacional:** 105
+
+### Procedimiento ante Sospecha de Golpe de Calor:
+1. Llamar de inmediato al 106 o 116.
+2. Mover a la víctima a la sombra más próxima o a un ambiente con ventilación o aire acondicionado.
+3. Aflojar o retirar ropa apretada o sintética.
+4. Aplicar toallas mojadas o paños fríos en zonas de alta vascularización: cuello, axilas e ingles.
+5. Si la persona está desmayada o confundida, **NO** forzar la ingesta de líquidos (riesgo de broncoaspiración).
+6. Si está consciente y orientada, ofrecer agua fresca a pequeños sorbos.
+
+---
+
+## 5. Licencia y Créditos
+- Creado y mantenido por: Green Owl Labs.
+- Fuentes de datos: Senamhi (Servicio Nacional de Meteorología e Hidrología del Perú), Open-Meteo, OpenStreetMap contributors.

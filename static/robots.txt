@@ -1,0 +1,53 @@
+# ==============================================================================
+# robots.txt for RUPAQ (https://rupaq.pe)
+# RUPAQ · Asistente de Calor Extremo y Salud para el Perú
+# Desarrollado por Green Owl Labs · Ciencia y Tecnología Ambiental
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_app/
+
+# Permitir indexación completa y transparente para buscadores y asistentes
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Motores de Inteligencia Artificial y LLMs (Acceso abierto a datos de salud pública)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Archivos de contexto para modelos de lenguaje (LLM discovery)
+# Ver especificación https://llmstxt.org
+# llms.txt: https://rupaq.pe/llms.txt
+# llms-full.txt: https://rupaq.pe/llms-full.txt
+
+# Mapa del sitio web
+Sitemap: https://rupaq.pe/sitemap.xml

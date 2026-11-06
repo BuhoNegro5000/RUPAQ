@@ -1,0 +1,6 @@
+{
+  "version": "2026.11.1",
+  "actualizado": "2026-11-05",
+  "nota": "Este archivo es el punto editorial para avisos oficiales. En producción se puede alimentar desde un feed autorizado de SENAMHI mediante la variable SENAMHI_ALERTS_URL. No inventar avisos.",
+  "alertas": []
+}
