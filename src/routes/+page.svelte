@@ -19,7 +19,7 @@
     loadForecast,
     forecastOffline
   } from '$lib/stores/forecast';
-  import { selectedLocation } from '$lib/stores/location';
+  import { selectedLocation, locationHydrated } from '$lib/stores/location';
   import { PROFILE_OPTIONS, settings, settingsHydrated } from '$lib/stores/settings';
   import { getActionPhrase, pickProfile } from '$lib/utils/action';
   import { peruParts, timeWithMinutes } from '$lib/utils/format';
@@ -99,20 +99,22 @@
 </script>
 
 <svelte:head>
-  <title>RUPAQ · Hoy en {$selectedLocation.distrito}</title>
+  <title>{$locationHydrated ? `RUPAQ · Hoy en ${$selectedLocation.distrito}` : 'RUPAQ · Calor y salud hoy en Perú'}</title>
   <meta
     name="description"
-    content={`Hoy en ${$selectedLocation.distrito}: ${data ? `${Math.round(data.now.feelsC)}°C de sensación térmica y riesgo ${riskMeta.label}.` : 'consulta el calor y qué hacer.'} Pronóstico en tiempo real y recomendaciones de salud.`}
+    content={$locationHydrated
+      ? `Hoy en ${$selectedLocation.distrito}: ${data ? `${Math.round(data.now.feelsC)}°C de sensación térmica y riesgo ${riskMeta.label}.` : 'consulta el calor y qué hacer.'} Pronóstico en tiempo real y recomendaciones de salud.`
+      : 'Consulta el calor de tu distrito en todo el Perú: sensación térmica, nivel de riesgo y qué hacer hoy. Pronóstico en tiempo real y recomendaciones de salud.'}
   />
-  <meta property="og:title" content={`RUPAQ · Hoy en ${$selectedLocation.distrito}`} />
+  <meta property="og:title" content="RUPAQ · Calor y salud hoy en Perú" />
   <meta
     property="og:description"
-    content={`Sensación térmica actual en ${$selectedLocation.distrito}: ${data ? `${Math.round(data.now.feelsC)}°C (${riskMeta.label})` : 'en tiempo real'}. Pronóstico de calor y salud en Perú.`}
+    content="Sensación térmica, riesgo de calor y recomendaciones de salud para tu distrito en todo el Perú."
   />
-  <meta name="twitter:title" content={`RUPAQ · Hoy en ${$selectedLocation.distrito}`} />
+  <meta name="twitter:title" content="RUPAQ · Calor y salud hoy en Perú" />
   <meta
     name="twitter:description"
-    content={`Sensación térmica actual en ${$selectedLocation.distrito}: ${data ? `${Math.round(data.now.feelsC)}°C (${riskMeta.label})` : 'en tiempo real'}.`}
+    content="Sensación térmica, riesgo de calor y recomendaciones de salud para tu distrito en todo el Perú."
   />
 </svelte:head>
 
