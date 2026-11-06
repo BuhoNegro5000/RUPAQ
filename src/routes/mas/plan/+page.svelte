@@ -166,8 +166,8 @@
       <section aria-labelledby="why-title">
         <h2 id="why-title">Por qué una lista corta funciona</h2>
         <p>
-          En una emergencia es difícil recordar todo. Una lista visible y concreta —agua, sombra,
-          números, personas a revisar— reduce las decisiones bajo presión. Marca solo lo que ya está
+          En una emergencia es difícil recordar todo. Una lista visible y concreta, con agua, sombra,
+          números y personas a revisar, reduce las decisiones bajo presión. Marca solo lo que ya está
           hecho: la lista no sirve si se convierte en otra tarea.
         </p>
       </section>

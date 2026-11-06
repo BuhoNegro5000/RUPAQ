@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { BookOpen, ChevronRight, Share2 } from '@lucide/svelte';
+  import { BookOpen, ChevronRight, Send, Share2 } from '@lucide/svelte';
   import Logo from '$lib/components/Logo.svelte';
   import PageIntro from '$lib/components/PageIntro.svelte';
   import sources from '$lib/content/sources.json';
@@ -118,7 +118,16 @@
           escríbenos. Leemos los mensajes y priorizamos los problemas de salud y accesibilidad.
         </p>
         <p>
-          <a class="mail" href="mailto:hola@greenowllabs.pe">hola@greenowllabs.pe</a>
+          <a
+            class="contact-button"
+            href="https://t.me/buhonegro4000"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Abrir contacto en Telegram"
+          >
+            <Send size={18} strokeWidth={2} aria-hidden="true" />
+            Contactar por Telegram
+          </a>
         </p>
         <div class="share-row">
           <button type="button" class="btn btn--ghost" onclick={share}>
@@ -277,13 +286,27 @@
     font-size: 0.9375rem;
   }
 
-  .mail {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: -0.035em;
-    color: var(--ink);
-    text-decoration-color: var(--hairline-strong);
+  .contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 46px;
+    padding: 0 18px;
+    border: 1px solid var(--hairline-strong);
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .contact-button:hover {
+    opacity: 0.88;
+  }
+
+  .contact-button:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
   }
 
   .share-row {
