@@ -380,7 +380,7 @@
     padding: 18px 20px;
     color: #451a03;
   }
-  :global([data-phase='night']) .banner-epidemiologico {
+  :global(html[data-theme='dark']) .banner-epidemiologico {
     background: rgba(127, 29, 29, 0.2);
     border-color: rgba(239, 68, 68, 0.35);
     color: #fecaca;
@@ -397,7 +397,7 @@
     margin: 0;
     color: #991b1b;
   }
-  :global([data-phase='night']) .banner-head h2 {
+  :global(html[data-theme='dark']) .banner-head h2 {
     color: #f87171;
   }
   .banner-text {
@@ -413,7 +413,7 @@
     gap: 6px;
     font-weight: 600;
   }
-  :global([data-phase='night']) .banner-meta {
+  :global(html[data-theme='dark']) .banner-meta {
     color: #fca5a5;
   }
 
@@ -435,7 +435,7 @@
   }
   .section-desc {
     font-size: 0.9375rem;
-    color: var(--ink-secondary);
+    color: var(--ink-soft);
     margin: -6px 0 16px;
     line-height: 1.5;
   }
@@ -484,7 +484,7 @@
   }
   .stat-desc {
     font-size: 0.8125rem;
-    color: var(--ink-secondary);
+    color: var(--ink-soft);
     line-height: 1.45;
     margin: 0;
   }
@@ -499,7 +499,7 @@
     background: rgba(220, 38, 38, 0.08);
     border-left: 4px solid #dc2626;
   }
-  :global([data-phase='night']) .callout--danger {
+  :global(html[data-theme='dark']) .callout--danger {
     background: rgba(220, 38, 38, 0.16);
   }
   .callout-title {
@@ -508,7 +508,7 @@
     color: #991b1b;
     margin-bottom: 6px;
   }
-  :global([data-phase='night']) .callout-title {
+  :global(html[data-theme='dark']) .callout-title {
     color: #fca5a5;
   }
   .callout p {
@@ -556,7 +556,7 @@
   }
   .disease-vector {
     font-size: 0.8125rem;
-    color: var(--ink-secondary);
+    color: var(--ink-soft);
   }
   .disease-badge {
     background: #fef3c7;
@@ -567,7 +567,7 @@
     border-radius: 6px;
     white-space: nowrap;
   }
-  :global([data-phase='night']) .disease-badge {
+  :global(html[data-theme='dark']) .disease-badge {
     background: #78350f;
     color: #fef3c7;
   }
@@ -639,13 +639,13 @@
     padding: 2px 5px;
     border-radius: 4px;
   }
-  :global([data-phase='night']) .cdc-table code {
+  :global(html[data-theme='dark']) .cdc-table code {
     background: rgba(255, 255, 255, 0.1);
   }
   .table-desc {
     font-size: 0.8125rem;
     line-height: 1.45;
-    color: var(--ink-secondary);
+    color: var(--ink-soft);
   }
   .table-badge {
     display: inline-block;
@@ -667,15 +667,15 @@
     background: #fef9c3;
     color: #854d0e;
   }
-  :global([data-phase='night']) .badge--danger {
+  :global(html[data-theme='dark']) .badge--danger {
     background: #7f1d1d;
     color: #fecaca;
   }
-  :global([data-phase='night']) .badge--warning {
+  :global(html[data-theme='dark']) .badge--warning {
     background: #7c2d12;
     color: #fed7aa;
   }
-  :global([data-phase='night']) .badge--attention {
+  :global(html[data-theme='dark']) .badge--attention {
     background: #713f12;
     color: #fef08a;
   }
@@ -715,7 +715,7 @@
   .step-desc {
     font-size: 0.8125rem;
     line-height: 1.45;
-    color: var(--ink-secondary);
+    color: var(--ink-soft);
     margin: 0;
   }
 
@@ -731,7 +731,7 @@
     color: #7f1d1d;
     margin-top: 18px;
   }
-  :global([data-phase='night']) .warning-callout {
+  :global(html[data-theme='dark']) .warning-callout {
     background: rgba(127, 29, 29, 0.35);
     border-color: #ef4444;
     color: #fecaca;
@@ -741,7 +741,7 @@
     margin-top: 2px;
     color: #dc2626;
   }
-  :global([data-phase='night']) .warning-icon {
+  :global(html[data-theme='dark']) .warning-icon {
     color: #f87171;
   }
   .warning-callout strong {
@@ -795,7 +795,7 @@
     font-weight: 700;
     margin-bottom: 8px;
   }
-  :global([data-phase='night']) .resource-pill {
+  :global(html[data-theme='dark']) .resource-pill {
     background: rgba(255, 255, 255, 0.15);
   }
   .resource-card strong {
@@ -804,7 +804,7 @@
   }
   .resource-note {
     font-size: 0.8125rem;
-    color: var(--ink-secondary);
+    color: var(--ink-soft);
     line-height: 1.4;
   }
 
