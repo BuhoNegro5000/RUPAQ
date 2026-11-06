@@ -808,6 +808,39 @@
     line-height: 1.4;
   }
 
+  /* La fase nocturna también oscurece el fondo global, aunque el tema elegido sea automático o claro. */
+  :global(.app-shell[data-phase='night']) .banner-epidemiologico,
+  :global(.app-shell[data-phase='night']) .callout--danger,
+  :global(.app-shell[data-phase='night']) .warning-callout {
+    color: #f4e7d6;
+  }
+
+  :global(.app-shell[data-phase='night']) .banner-epidemiologico {
+    background: rgba(127, 29, 29, 0.2);
+    border-color: rgba(239, 68, 68, 0.35);
+  }
+
+  :global(.app-shell[data-phase='night']) .banner-head h2,
+  :global(.app-shell[data-phase='night']) .banner-meta,
+  :global(.app-shell[data-phase='night']) .callout-title,
+  :global(.app-shell[data-phase='night']) .warning-callout {
+    color: #fecaca;
+  }
+
+  :global(.app-shell[data-phase='night']) .disease-badge {
+    background: #78350f;
+    color: #fef3c7;
+  }
+
+  :global(.app-shell[data-phase='night']) .warning-callout {
+    border-color: #ef4444;
+  }
+
+  :global(.app-shell[data-phase='night']) .resource-pill {
+    background: rgba(255, 255, 255, 0.15);
+    color: #d9f99d;
+  }
+
   /* Footer */
   .sources-footer {
     font-size: 0.75rem;
