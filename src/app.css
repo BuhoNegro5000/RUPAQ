@@ -25,8 +25,8 @@
   --paper-deep: #efe3d0;
   --paper-high: #fffaf2;
   --ink: #2b1608;
-  --ink-soft: #482f1a;
-  --ink-mute: #563920;
+  --ink-soft: #3b2616;
+  --ink-mute: #49301b;
   --hairline: rgba(43, 22, 8, 0.22);
   --hairline-soft: rgba(43, 22, 8, 0.14);
   --hairline-strong: rgba(43, 22, 8, 0.58);
@@ -35,8 +35,8 @@
   --focus: #0b6657;
   --white: #fffaf2;
 
-  --safe: #7d9a5b;
-  --safe-ink: #34461f;
+  --safe: #63883d;
+  --safe-ink: #243b12;
   --attention: #d9a441;
   --attention-ink: #674405;
   --precaution: #e0762b;
@@ -428,6 +428,7 @@ h4 {
 .screen {
   height: 100%;
   min-height: 0;
+  color: var(--ink);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
