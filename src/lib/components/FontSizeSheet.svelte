@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { FONT_STEPS, settings, updateSettings } from '$lib/stores/settings';
+  import { FONT_STEPS, THEME_OPTIONS, settings, updateSettings } from '$lib/stores/settings';
   import { fontSheetOpen } from '$lib/stores/ui';
   import BottomSheet from './BottomSheet.svelte';
   import { Check } from '@lucide/svelte';
@@ -34,6 +34,19 @@
   <p class="hint">
     Con el texto más grande, Hoy puede necesitar un poco de scroll. El resto de la app se adapta.
   </p>
+  <h3 class="theme-title" id="theme-sheet-title">Apariencia</h3>
+  <div class="theme-options" role="group" aria-labelledby="theme-sheet-title">
+    {#each THEME_OPTIONS as option}
+      <button
+        type="button"
+        class="theme-option"
+        aria-pressed={$settings.theme === option.value}
+        onclick={() => updateSettings({ theme: option.value })}
+      >
+        {option.label}
+      </button>
+    {/each}
+  </div>
   <a class="more" href="/mas/accesibilidad" onclick={close}>Más ajustes de accesibilidad</a>
 </BottomSheet>
 
@@ -76,6 +89,33 @@
     font-size: 0.9375rem;
     color: var(--ink-mute);
     line-height: 1.4;
+  }
+  .theme-title {
+    margin-top: 20px;
+    font-size: 1.0625rem;
+    font-weight: 650;
+  }
+  .theme-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .theme-option {
+    min-height: 52px;
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  .theme-option[aria-pressed='true'] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+  }
+  .theme-option:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
   }
   .more {
     display: inline-flex;

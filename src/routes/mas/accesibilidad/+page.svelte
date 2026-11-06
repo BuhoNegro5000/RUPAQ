@@ -2,7 +2,7 @@
   import { onDestroy } from 'svelte';
   import { Check, RotateCcw, Square, Volume2 } from '@lucide/svelte';
   import PageIntro from '$lib/components/PageIntro.svelte';
-  import { FONT_STEPS, settings, updateSettings } from '$lib/stores/settings';
+  import { FONT_STEPS, THEME_OPTIONS, settings, updateSettings } from '$lib/stores/settings';
   import { canSpeak, speak, stopSpeaking } from '$lib/utils/speech';
 
   let speaking = false;
@@ -12,6 +12,8 @@
     'El calor está fuerte. Toma agua cada treinta minutos y busca sombra entre las once y las cuatro de la tarde.';
 
   $: fontLabel = FONT_STEPS.find((step) => step.value === $settings.fontScale)?.label ?? 'Normal';
+
+  $: themeLabel = THEME_OPTIONS.find((option) => option.value === $settings.theme)?.label ?? 'Automático';
 
   function testVoice(): void {
     if (speaking) {
@@ -27,6 +29,7 @@
   function reset(): void {
     updateSettings({
       fontScale: 1,
+      theme: 'auto',
       simple: false,
       contrast: false,
       readAloud: false
@@ -83,6 +86,28 @@
           {/each}
         </div>
         <p class="hint">La letra cambia en toda la app, también en las guías sin conexión.</p>
+      </section>
+
+      <section aria-labelledby="theme-title">
+        <div class="section-label">
+          <h2 id="theme-title">Apariencia</h2>
+          <span class="current">{themeLabel}</span>
+        </div>
+        <div class="theme-options" role="group" aria-label="Apariencia">
+          {#each THEME_OPTIONS as option}
+            <button
+              type="button"
+              class="font-option"
+              class:font-option--active={$settings.theme === option.value}
+              aria-pressed={$settings.theme === option.value}
+              onclick={() => updateSettings({ theme: option.value })}
+            >
+              <span class="font-option__label">{option.label}</span>
+              <span class="theme-detail">{option.detail}</span>
+            </button>
+          {/each}
+        </div>
+        <p class="hint">Elige fondo claro si lees con sol; oscuro si lees de noche.</p>
       </section>
 
       <section aria-labelledby="display-title">
@@ -237,11 +262,26 @@
     color: var(--ink-soft);
   }
 
+  .theme-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  .theme-detail {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-align: center;
+    opacity: 0.85;
+    padding: 0 6px;
+  }
+
   .font-option:hover {
     background: var(--field);
   }
 
-  .font-option--active {
+  .font-option--active,
+  .font-option--active:hover {
     background: var(--ink);
     border-color: var(--ink);
     color: var(--paper);

@@ -959,8 +959,20 @@ h4 {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+html[data-theme='light'] {
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+
+  select,
+  input,
+  textarea {
+    color-scheme: dark;
+  }
+
+  & {
     --paper: #1b1510;
     --paper-deep: #241c15;
     --paper-high: #2b2119;
@@ -1357,16 +1369,14 @@ html.high-contrast {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html.high-contrast {
-    --paper: #0d0a07;
-    --ink: #ffffff;
-    --ink-soft: #f4e7d6;
-    --ink-mute: #e0cbb3;
-    --hairline: rgba(255, 255, 255, 0.5);
-    --hairline-soft: rgba(255, 255, 255, 0.32);
-    --hairline-strong: rgba(255, 255, 255, 0.88);
-    --field: rgba(255, 255, 255, 0.1);
-    --focus: #9effe1;
-  }
+html[data-theme='dark'].high-contrast {
+  --paper: #0d0a07;
+  --ink: #ffffff;
+  --ink-soft: #f4e7d6;
+  --ink-mute: #e0cbb3;
+  --hairline: rgba(255, 255, 255, 0.5);
+  --hairline-soft: rgba(255, 255, 255, 0.32);
+  --hairline-strong: rgba(255, 255, 255, 0.88);
+  --field: rgba(255, 255, 255, 0.1);
+  --focus: #9effe1;
 }
