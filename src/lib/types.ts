@@ -119,8 +119,11 @@ export interface ApiError {
   message: string;
 }
 
-export type Settings = {
+  export type ThemePreference = 'auto' | 'light' | 'dark';
+
+  export type Settings = {
   fontScale: number;
+  theme: ThemePreference;
   simple: boolean;
   contrast: boolean;
   readAloud: boolean;

@@ -148,10 +148,22 @@
     <!-- Script de configuración temprana -->
     <script>
       (() => {
+        const root = document.documentElement;
+        let s = {};
         try {
           const raw = localStorage.getItem('rupaq.settings.v1');
-          if (!raw) return;
-          const s = JSON.parse(raw);
+          if (raw) s = JSON.parse(raw) || {};
+        } catch (_) {}
+        try {
+          const dark =
+            s.theme === 'dark' ||
+            (s.theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          root.setAttribute('data-theme', dark ? 'dark' : 'light');
+          document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
+            m.setAttribute('content', dark ? '#201a16' : '#f7efe3');
+          });
+        } catch (_) {}
+        try {
           document.documentElement.style.setProperty('--font-scale', String(s.fontScale || 1));
           if (s.simple) document.documentElement.classList.add('simple-mode');
           if (s.contrast) document.documentElement.classList.add('high-contrast');

@@ -300,13 +300,13 @@
 
   .degree {
     display: inline-block;
-    font-size: 0.39em;
+    font-size: 0.42em;
     line-height: 1;
     vertical-align: top;
-    transform: translateY(0.16em);
-    margin-left: 0.015em;
-    letter-spacing: -0.04em;
-    font-weight: 520;
+    transform: translateY(0.14em);
+    margin-left: 0.14em;
+    letter-spacing: 0;
+    font-weight: 600;
   }
 
   .risk-line {

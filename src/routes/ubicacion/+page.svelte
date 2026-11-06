@@ -740,16 +740,14 @@
     color: #fdf7f0 !important;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .select-wrap select {
-      background-color: #241d18;
-      color: #fdf7f0;
-      border-color: rgba(255, 235, 215, 0.28);
-    }
-    .select-wrap select option {
-      background-color: #241d18 !important;
-      color: #fdf7f0 !important;
-    }
+  :global(html[data-theme='dark']) .select-wrap select {
+    background-color: #241d18;
+    color: #fdf7f0;
+    border-color: rgba(255, 235, 215, 0.28);
+  }
+  :global(html[data-theme='dark']) .select-wrap select option {
+    background-color: #241d18 !important;
+    color: #fdf7f0 !important;
   }
 
   .select-wrap :global(svg) {

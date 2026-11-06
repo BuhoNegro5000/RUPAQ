@@ -350,13 +350,13 @@
 
   .degree {
     display: inline-block;
-    font-size: 0.4em;
+    font-size: 0.42em;
     line-height: 1;
     vertical-align: top;
-    transform: translateY(0.13em);
-    margin-left: 0.02em;
-    letter-spacing: -0.04em;
-    font-weight: 520;
+    transform: translateY(0.12em);
+    margin-left: 0.14em;
+    letter-spacing: 0;
+    font-weight: 600;
   }
 
   .feels-copy {
