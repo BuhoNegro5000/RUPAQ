@@ -11,6 +11,9 @@ const config = {
         exclude: ['<all>']
       }
     }),
+    serviceWorker: {
+      register: false
+    },
     alias: {
       $content: 'src/lib/content',
       $lib: 'src/lib'
