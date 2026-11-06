@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { Trash2 } from '@lucide/svelte';
+  import { Send, Trash2 } from '@lucide/svelte';
   import PageIntro from '$lib/components/PageIntro.svelte';
 
   let cleared = false;
@@ -46,7 +46,7 @@
         <h2 id="summary-title">En una frase</h2>
         <p>
           Para mostrarte el calor, enviamos el <strong>código de ubigeo del distrito</strong> a nuestra
-          API. Todo lo demás —perfil, lugares, listas y preferencias— se guarda en el almacenamiento
+          API. Todo lo demás, como tu perfil, lugares, listas y preferencias, se guarda en el almacenamiento
           local de tu navegador.
         </p>
         <div class="callout">
@@ -114,7 +114,7 @@
         <p>
           Puedes acceder, corregir o borrar tus datos locales en cualquier momento. Para consultas de
           privacidad, escríbenos a
-          <a href="mailto:hola@greenowllabs.pe">hola@greenowllabs.pe</a>.
+          <a class="contact-button" href="https://t.me/buhonegro4000" target="_blank" rel="noreferrer" aria-label="Abrir contacto en Telegram"><Send size={17} strokeWidth={2} aria-hidden="true" /> Contactar por Telegram</a>.
         </p>
       </section>
 
@@ -147,7 +147,7 @@
         </p>
         <p class="version">Versión 1.0 · Actualizada el 5 de noviembre de 2026.</p>
         <p>
-          Responsable: Green Owl Labs · <a href="mailto:hola@greenowllabs.pe">hola@greenowllabs.pe</a>
+          Responsable: Green Owl Labs · <a class="contact-button contact-button--inline" href="https://t.me/buhonegro4000" target="_blank" rel="noreferrer" aria-label="Abrir contacto en Telegram"><Send size={17} strokeWidth={2} aria-hidden="true" /> Contactar por Telegram</a>
         </p>
       </section>
 
@@ -184,6 +184,35 @@
   .version {
     color: var(--ink-mute) !important;
     font-size: 0.875rem !important;
+  }
+
+  .contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 42px;
+    padding: 0 15px;
+    border: 1px solid var(--hairline-strong);
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  .contact-button:hover {
+    opacity: 0.88;
+  }
+
+  .contact-button:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  .contact-button--inline {
+    display: inline-flex;
+    margin-top: 8px;
   }
 
   .delete-button {
