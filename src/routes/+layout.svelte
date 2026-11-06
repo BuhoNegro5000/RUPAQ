@@ -71,7 +71,8 @@
 
     window.addEventListener('online', onOnline);
 
-    if (!dev && 'serviceWorker' in navigator) {
+    const isV0Preview = window.location.hostname.endsWith('.v0.build');
+    if (!dev && !isV0Preview && 'serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).catch(() => {
         // La app funciona sin service worker; se reintentará en la próxima visita.
       });
