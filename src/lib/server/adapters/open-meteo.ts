@@ -63,9 +63,9 @@ export function airCategory(aqi: number | null): { category: string; level: 0 | 
   if (aqi == null || Number.isNaN(aqi)) return { category: 'Sin dato', level: 0 };
   if (aqi <= 20) return { category: 'Buena', level: 0 };
   if (aqi <= 40) return { category: 'Regular', level: 1 };
-  if (aqi <= 60) return { category: 'Mala', level: 2 };
-  if (aqi <= 80) return { category: 'Muy mala', level: 3 };
-  return { category: 'Extremadamente mala', level: 4 };
+  if (aqi <= 60) return { category: 'Moderada', level: 2 };
+  if (aqi <= 80) return { category: 'Mala', level: 3 };
+  return { category: 'Muy mala', level: 4 };
 }
 
 function nearestAir(air: OpenMeteoAir | null, time: string): AirInfo {
