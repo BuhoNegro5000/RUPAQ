@@ -1,6 +1,5 @@
 <script lang="ts">
   import { browser, dev } from '$app/environment';
-  import { onNavigate } from '$app/navigation';
   import { afterNavigate } from '$app/navigation';
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
@@ -102,19 +101,6 @@
     }
   });
 
-  onNavigate((navigation) => {
-    if (!browser || !document.startViewTransition || !navigation.to) return;
-    return new Promise<void>((resolve) => {
-      document.startViewTransition(async () => {
-        resolve();
-        try {
-          await navigation.complete;
-        } catch {
-          // Si la transición se interrumpe, no bloquear la navegación
-        }
-      });
-    });
-  });
 
   $: if (browser && documentTitle && document.title !== documentTitle) {
     document.title = documentTitle;
