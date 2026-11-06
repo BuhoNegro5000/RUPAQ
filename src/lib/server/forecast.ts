@@ -120,16 +120,15 @@ function buildResponse(
 
 export async function getForecastForLocation(
   location: Location,
-  platform: App.Platform | undefined,
   options: { force?: boolean } = {}
 ): Promise<{ forecast: ForecastResponse; cacheStatus: 'hit' | 'miss' | 'stale' }> {
   const key = cacheKey(location.ubigeo);
-  const cachedRaw = (await readCache(platform, key)) as CachedForecast | null;
+  const cachedRaw = (await readCache(key)) as CachedForecast | null;
   const cachedAge = cachedRaw ? ageMinutes(cachedRaw.fetchedAt) : Number.POSITIVE_INFINITY;
 
   if (cachedRaw && cachedAge <= MAX_AGE_MINUTES && !options.force) {
     const result = hydrate(cachedRaw);
-    const alerts = await getSenamhiAlerts(platform, location);
+    const alerts = await getSenamhiAlerts(location);
     return {
       forecast: buildResponse(cachedRaw, result, alerts, false),
       cacheStatus: 'hit'
@@ -139,8 +138,8 @@ export async function getForecastForLocation(
   try {
     const fresh = await fetchOpenMeteo(location);
     const nextCache = toCached(fresh, location);
-    await writeCache(platform, key, nextCache, CACHE_TTL_SECONDS);
-    const alerts = await getSenamhiAlerts(platform, location);
+    await writeCache(key, nextCache, CACHE_TTL_SECONDS);
+    const alerts = await getSenamhiAlerts(location);
     return {
       forecast: buildResponse(nextCache, fresh, alerts, false),
       cacheStatus: 'miss'
@@ -148,7 +147,7 @@ export async function getForecastForLocation(
   } catch (error) {
     if (cachedRaw) {
       const result = hydrate(cachedRaw);
-      const alerts = await getSenamhiAlerts(platform, location);
+      const alerts = await getSenamhiAlerts(location);
       const response = buildResponse(cachedRaw, result, alerts, true);
       response.freshness.status = 'stale';
       return { forecast: response, cacheStatus: 'stale' };

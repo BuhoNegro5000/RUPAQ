@@ -5,17 +5,17 @@ import { featuredUbigeos, getLocation, listUbigeos } from '$lib/server/locations
 
 /**
  * Ingesta programada. Se llama desde GitHub Actions cada 2 horas o desde
- * un Cron Trigger de Cloudflare. Sin INGEST_SECRET configurado responde 503.
+ * un Vercel Cron. Sin INGEST_SECRET configurado responde 503.
  */
-const GET: RequestHandler = async ({ url, request, platform }) => {
-  return ingest(url, request, platform);
+const GET: RequestHandler = async ({ url, request }) => {
+  return ingest(url, request);
 };
-const POST: RequestHandler = async ({ url, request, platform }) => {
-  return ingest(url, request, platform);
+const POST: RequestHandler = async ({ url, request }) => {
+  return ingest(url, request);
 };
 
-async function ingest(url: URL, request: Request, platform: App.Platform | undefined) {
-  const secret = platform?.env?.INGEST_SECRET;
+async function ingest(url: URL, request: Request) {
+  const secret = process.env.INGEST_SECRET;
   if (!secret) {
     return json(
       {
@@ -57,7 +57,7 @@ async function ingest(url: URL, request: Request, platform: App.Platform | undef
       continue;
     }
     try {
-      const { cacheStatus } = await getForecastForLocation(location, platform, { force: true });
+      const { cacheStatus } = await getForecastForLocation(location, { force: true });
       results.push({ ubigeo, ok: true, cache: cacheStatus });
     } catch (error) {
       results.push({ ubigeo, ok: false, error: String(error) });

@@ -56,6 +56,18 @@
   }
 
 
+  // Los navegadores rechazan un service worker servido tras una redirección,
+  // así que se comprueba antes de registrarlo. La app funciona sin él.
+  async function registerServiceWorker() {
+    try {
+      const response = await fetch('/service-worker.js', { redirect: 'manual', cache: 'no-store' });
+      if (response.type === 'opaqueredirect' || !response.ok) return;
+      await navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
+    } catch {
+      // Se reintentará en la próxima visita.
+    }
+  }
+
   onMount(() => {
     loadSettings();
     loadStoredLocation();
@@ -71,10 +83,9 @@
 
     window.addEventListener('online', onOnline);
 
-    if (!dev && 'serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).catch(() => {
-        // La app funciona sin service worker; se reintentará en la próxima visita.
-      });
+    const isV0Preview = window.location.hostname.endsWith('.v0.build');
+    if (!dev && !isV0Preview && 'serviceWorker' in navigator) {
+      void registerServiceWorker();
     }
 
     return () => {
