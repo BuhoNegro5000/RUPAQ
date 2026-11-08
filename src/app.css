@@ -1236,6 +1236,18 @@ html.high-contrast {
   color: var(--ink-soft);
 }
 
+.reading-body ul:is(.reading-links, .setting-list, .profile-list, .source-list, .alert-list, .place-list, .checklist) > li {
+  padding-left: 0;
+}
+
+.reading-body ul:is(.reading-links, .setting-list, .profile-list, .source-list, .alert-list, .place-list, .checklist) > li::before {
+  content: none;
+}
+
+.reading-body ul.reading-links > li {
+  padding: 0;
+}
+
 .reading-body li strong {
   color: var(--ink);
 }

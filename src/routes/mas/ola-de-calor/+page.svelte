@@ -126,15 +126,13 @@
           En días de calor, la radiación ultravioleta puede quemar la piel y los ojos aunque haya nubes
           o viento. Conoce el índice UV de hoy, cómo protegerte y qué hacer si te quemaste.
         </p>
-        <ul class="reading-links">
-          <li>
-            <a href="/mas/radiacion-uv">Riesgos por exposición a radiación ultravioleta <ChevronRight size={18} aria-hidden="true" /></a>
-          </li>
-        </ul>
       </section>
 
       <nav aria-label="Siguientes pasos">
         <ul class="reading-links">
+          <li>
+            <a href="/mas/radiacion-uv">Riesgos por exposición a radiación ultravioleta <ChevronRight size={18} aria-hidden="true" /></a>
+          </li>
           <li>
             <a href="/mas/dengue-y-clima">Dengue, agua almacenada y datos CDC/MINSA <ChevronRight size={18} aria-hidden="true" /></a>
           </li>
