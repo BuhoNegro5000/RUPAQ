@@ -5,16 +5,28 @@
   export let uv: number | null;
   export let uvMax: number | null;
   export let air: AirInfo;
+
+  function uvAdvice(value: number | null): string {
+    if (value == null) return 'Sin dato de exposición';
+    if (value < 3) return 'Protección habitual';
+    if (value < 6) return 'Usa sombrero y protector solar';
+    if (value < 8) return 'Busca sombra y reaplica protector';
+    if (value < 11) return 'Evita el sol del mediodía';
+    return 'Evita la exposición al mediodía';
+  }
 </script>
 
 <div class="secondary-metrics">
-  <div class="metric">
-    <span class="metric__label">UV ahora</span>
-    <span class="metric__value tabular">{uv == null ? '—' : formatNumber(uv)}</span>
-    <span class="metric__tag">{uvCategory(uv)}</span>
+  <div class="metric metric--uv">
+    <div class="metric__row">
+      <span class="metric__label">UV ahora</span>
+      <span class="metric__value tabular">{uv == null ? '—' : formatNumber(uv)}</span>
+      <span class="metric__tag">{uvCategory(uv)}</span>
+    </div>
     {#if uvMax != null}
-      <span class="metric__detail">Máx. hoy {formatNumber(uvMax)}</span>
+      <span class="metric__detail">Máximo hoy: {formatNumber(uvMax)}</span>
     {/if}
+    <span class="metric__advice">{uvAdvice(uvMax ?? uv)}</span>
   </div>
   <span class="metric__rule" aria-hidden="true"></span>
   <div class="metric">
@@ -35,6 +47,18 @@
     min-height: 50px;
   }
   .metric {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    min-width: 0;
+  }
+  .metric--uv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+  .metric__row {
     display: flex;
     align-items: baseline;
     gap: 7px;
@@ -64,11 +88,16 @@
     white-space: nowrap;
   }
   .metric__detail {
-    flex-basis: 100%;
     font-size: 0.75rem;
     color: var(--ink-soft);
     font-weight: 560;
     white-space: nowrap;
+  }
+  .metric__advice {
+    font-size: 0.6875rem;
+    line-height: 1.3;
+    color: var(--ink-soft);
+    max-width: 15rem;
   }
   .metric__rule {
     width: 1px;
