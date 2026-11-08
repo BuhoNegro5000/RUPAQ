@@ -19,7 +19,8 @@
     Smartphone,
     Sun,
     ThermometerSun,
-    UserRound
+    UserRound,
+    Waves
   } from '@lucide/svelte';
   import LocationHeader from '$lib/components/LocationHeader.svelte';
   import { savedPlaces, selectedLocation } from '$lib/stores/location';
@@ -136,6 +137,17 @@
                 <span class="row-sub">Por qué hay más calor, y qué significa para tu salud</span>
               </span>
               <span class="row-badge">IPCC</span>
+              <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
+            </a>
+          </li>
+          <li>
+            <a class="more-row" href="/mas/el-nino-y-calor">
+              <span class="row-icon" aria-hidden="true"><Waves size={21} strokeWidth={1.7} /></span>
+              <span class="row-copy">
+                <span class="row-title">El Niño y el calor</span>
+                <span class="row-sub">Mar caliente, noches cálidas, dengue y alertas del ENFEN</span>
+              </span>
+              <span class="row-badge">ENFEN</span>
               <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
             </a>
           </li>

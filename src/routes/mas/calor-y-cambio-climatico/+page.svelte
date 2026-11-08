@@ -66,7 +66,8 @@
           <li>
             <strong>El Niño y el mar caliente:</strong> cuando el mar frente a la costa se calienta, el
             calor, la humedad y las lluvias fuertes aumentan en la costa norte y central. El cambio
-            climático puede sumarse a ese efecto natural.
+            climático puede sumarse a ese efecto natural. Lee más en
+            <a href="/mas/el-nino-y-calor">El Niño y el calor</a>.
           </li>
           <li>
             <strong>Glaciares que retroceden:</strong> los glaciares tropicales de los Andes se han
@@ -124,6 +125,9 @@
 
       <nav aria-label="Siguientes pasos">
         <ul class="reading-links">
+          <li>
+            <a href="/mas/el-nino-y-calor">El Niño y el calor <ChevronRight size={18} aria-hidden="true" /></a>
+          </li>
           <li>
             <a href="/mas/ola-de-calor">Ola de calor y noches <ChevronRight size={18} aria-hidden="true" /></a>
           </li>
