@@ -71,7 +71,10 @@
               alt="Esquema del calor extremo con sus efectos indirectos y directos en la salud. Indirectos: mayor transmisión de algunas enfermedades, impactos en los servicios y centros de salud, interrupciones en infraestructuras críticas y sistemas tecnológicos, impactos en los ecosistemas como sequías, incendios y mala calidad del aire, y efectos asociados a cambios en el comportamiento, incluido un mayor riesgo de accidentes. Directos: agravamiento de afecciones preexistentes y efectos en la salud mental, enfermedades por calor y golpe de calor, hospitalización y muerte."
             />
           </div>
-          <figcaption>Efectos directos e indirectos del calor extremo en la salud.</figcaption>
+          <figcaption>
+            Efectos directos e indirectos del calor extremo en la salud.
+            <span class="effects-figure__source">Fuente: WHO TEAM</span>
+          </figcaption>
         </figure>
         <p>
           Por eso protegerse del calor no es solo evitar el golpe de calor: también es cuidar a quienes
@@ -228,5 +231,11 @@
     color: var(--ink-mute);
     font-size: 0.875rem;
     line-height: 1.4;
+  }
+
+  .effects-figure__source {
+    display: block;
+    margin-top: 2px;
+    font-weight: 600;
   }
 </style>
