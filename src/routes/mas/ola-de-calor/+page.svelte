@@ -224,10 +224,6 @@
     margin-top: 18px;
   }
 
-  .uv-section {
-    content-visibility: auto;
-  }
-
   .section-kicker {
     margin-bottom: 8px;
     color: var(--accent, var(--ink-soft));
