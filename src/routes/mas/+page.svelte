@@ -18,6 +18,7 @@
     SlidersHorizontal,
     Smartphone,
     Sun,
+    ThermometerSun,
     UserRound
   } from '@lucide/svelte';
   import LocationHeader from '$lib/components/LocationHeader.svelte';
@@ -124,6 +125,17 @@
                 <span class="row-title">Ola de calor y noches</span>
                 <span class="row-sub">Por qué el calor que no baja también enferma</span>
               </span>
+              <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
+            </a>
+          </li>
+          <li>
+            <a class="more-row" href="/mas/calor-y-cambio-climatico">
+              <span class="row-icon" aria-hidden="true"><ThermometerSun size={21} strokeWidth={1.7} /></span>
+              <span class="row-copy">
+                <span class="row-title">El calor y el cambio climático</span>
+                <span class="row-sub">Por qué hay más calor, y qué significa para tu salud</span>
+              </span>
+              <span class="row-badge">IPCC</span>
               <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
             </a>
           </li>
