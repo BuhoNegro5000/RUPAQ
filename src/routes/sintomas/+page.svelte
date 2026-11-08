@@ -98,6 +98,16 @@
       </ol>
     </section>
 
+    <aside class="uv-note" aria-labelledby="uv-note-title">
+      <p class="eyebrow">Sol y radiación UV</p>
+      <h2 id="uv-note-title">¿Te quemaste o te arden los ojos?</h2>
+      <p>
+        Las guías de quemadura solar y de ojos irritados están en la lista de arriba. Para entender
+        el índice UV de hoy y cómo protegerte, lee la sección completa.
+      </p>
+      <a class="btn btn--ghost" href="/mas/radiacion-uv">Riesgos por radiación UV</a>
+    </aside>
+
     <aside class="guide-note">
       <h2>Cómo usar las guías</h2>
       <p>
@@ -300,8 +310,28 @@
     justify-self: end;
   }
 
-  .guide-note {
+  .uv-note {
     margin-top: 28px;
+    padding: 18px 0;
+    border-top: 1px solid var(--hairline);
+  }
+
+  .uv-note h2 {
+    margin-top: 4px;
+    font-size: 1.3rem;
+    letter-spacing: -0.035em;
+  }
+
+  .uv-note p:not(.eyebrow) {
+    margin: 8px 0 14px;
+    color: var(--ink-soft);
+    font-size: 1rem;
+    line-height: 1.48;
+    max-width: 58ch;
+  }
+
+  .guide-note {
+    margin-top: 0;
     padding: 18px 0;
     border-top: 1px solid var(--hairline);
     border-bottom: 1px solid var(--hairline);

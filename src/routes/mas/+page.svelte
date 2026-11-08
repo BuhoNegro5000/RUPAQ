@@ -17,6 +17,7 @@
     Share,
     SlidersHorizontal,
     Smartphone,
+    Sun,
     UserRound
   } from '@lucide/svelte';
   import LocationHeader from '$lib/components/LocationHeader.svelte';
@@ -123,6 +124,17 @@
                 <span class="row-title">Ola de calor y noches</span>
                 <span class="row-sub">Por qué el calor que no baja también enferma</span>
               </span>
+              <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
+            </a>
+          </li>
+          <li>
+            <a class="more-row" href="/mas/radiacion-uv">
+              <span class="row-icon" aria-hidden="true"><Sun size={21} strokeWidth={1.7} /></span>
+              <span class="row-copy">
+                <span class="row-title">Radiación UV y tu piel</span>
+                <span class="row-sub">Índice UV, riesgos para piel y ojos, y cómo protegerte</span>
+              </span>
+              <span class="row-badge">OMS</span>
               <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
             </a>
           </li>
