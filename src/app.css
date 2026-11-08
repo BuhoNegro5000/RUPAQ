@@ -1296,11 +1296,12 @@ html.high-contrast {
   font-family: var(--font-display);
   font-size: clamp(3rem, 9vw, 4.4rem);
   font-weight: 620;
-  line-height: 0.9;
-  letter-spacing: -0.07em;
+  line-height: 1;
+  letter-spacing: 0.01em;
   color: var(--risk-ink);
-  font-variant-numeric: tabular-nums;
-}
+  font-variant-numeric: proportional-nums;
+  flex-shrink: 0;
+  }
 
 .pull-stat__copy {
   margin: 0;
