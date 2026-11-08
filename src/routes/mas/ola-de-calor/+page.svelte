@@ -120,6 +120,80 @@
         </p>
       </section>
 
+      <section class="uv-section" aria-labelledby="uv-title">
+        <p class="section-kicker">Riesgo ambiental</p>
+        <h2 id="uv-title">Riesgos por exposición a radiación ultravioleta</h2>
+        <p>
+          La radiación ultravioleta (UV) es parte de la luz solar. No se ve ni se siente como el calor,
+          pero puede dañar la piel y los ojos incluso cuando el cielo está nublado o corre viento.
+          El <strong>índice UV</strong> indica la intensidad máxima prevista del día: cuanto más alto es,
+          menos tiempo necesita la piel para lesionarse.
+        </p>
+
+        <div class="uv-callout" role="note">
+          <span class="uv-callout__label">Idea clave</span>
+          <p>
+            El protector solar no enfría el cuerpo ni autoriza a permanecer más tiempo bajo el sol.
+            La primera protección es reducir la exposición, buscar sombra y cubrir la piel.
+          </p>
+        </div>
+
+        <h3>Cómo interpretar el índice UV</h3>
+        <div class="uv-levels" role="list" aria-label="Niveles del índice ultravioleta">
+          <div class="uv-level uv-level--low" role="listitem">
+            <strong>0–2 · Bajo</strong>
+            <span>Riesgo reducido para la mayoría. Usa protección si permanecerás al aire libre.</span>
+          </div>
+          <div class="uv-level uv-level--moderate" role="listitem">
+            <strong>3–5 · Moderado</strong>
+            <span>Busca sombra, usa sombrero, ropa que cubra la piel y protector solar.</span>
+          </div>
+          <div class="uv-level uv-level--high" role="listitem">
+            <strong>6–7 · Alto</strong>
+            <span>La piel desprotegida puede quemarse rápido. Evita el sol del mediodía.</span>
+          </div>
+          <div class="uv-level uv-level--very-high" role="listitem">
+            <strong>8–10 · Muy alto</strong>
+            <span>Limita la exposición entre las 10:00 y las 16:00 y refuerza todas las medidas.</span>
+          </div>
+          <div class="uv-level uv-level--extreme" role="listitem">
+            <strong>11 o más · Extremadamente alto</strong>
+            <span>Evita la exposición directa al mediodía. La sombra y la ropa son indispensables.</span>
+          </div>
+        </div>
+
+        <h3>Qué daños puede causar</h3>
+        <ul>
+          <li><strong>A corto plazo:</strong> enrojecimiento, ardor, dolor, hinchazón y ampollas por quemadura solar.</li>
+          <li><strong>En los ojos:</strong> irritación, lagrimeo y sensibilidad a la luz; la exposición acumulada favorece cataratas y otras lesiones.</li>
+          <li><strong>A largo plazo:</strong> manchas, envejecimiento prematuro de la piel, daño del sistema inmunitario y mayor riesgo de cáncer de piel.</li>
+          <li><strong>Con calor intenso:</strong> una quemadura solar dificulta que la piel regule la temperatura y puede agravar la deshidratación.</li>
+        </ul>
+
+        <h3>Protégete mejor</h3>
+        <ol>
+          <li>Planifica las actividades al aire libre fuera del mediodía y aprovecha la sombra; recuerda que la arena, el agua y superficies claras reflejan UV.</li>
+          <li>Usa ropa ligera que cubra brazos y piernas, sombrero de ala ancha y lentes de sol con protección UV400 o 100% UV.</li>
+          <li>Aplica protector de amplio espectro SPF 30 o superior 15 minutos antes de salir. Reaplica cada dos horas y después de sudar o mojarte.</li>
+          <li>Protege también orejas, cuello, labios, manos, empeines y la parte superior de la cabeza si hay poco cabello.</li>
+          <li>No uses camas solares. No existe un bronceado “seguro” ni la piel oscura elimina el riesgo de daño.</li>
+        </ol>
+
+        <div class="uv-alert" role="alert">
+          <strong>Busca atención médica</strong>
+          <p>
+            Si hay ampollas extensas, dolor intenso, fiebre, escalofríos, confusión, desmayo o signos de
+            deshidratación, aléjate del sol, enfría la piel con agua fresca sin hielo y busca atención.
+            No revientes las ampollas ni apliques remedios caseros irritantes.
+          </p>
+        </div>
+
+        <p class="meta">
+          El índice UV cambia según la hora, la nubosidad, la altitud y la ubicación. Consulta el valor
+          actual y el máximo del día en RUPAQ; para alertas oficiales, revisa SENAMHI.
+        </p>
+      </section>
+
       <nav aria-label="Siguientes pasos">
         <ul class="reading-links">
           <li>
@@ -148,5 +222,91 @@
 <style>
   .pull-stat {
     margin-top: 18px;
+  }
+
+  .uv-section {
+    content-visibility: auto;
+  }
+
+  .section-kicker {
+    margin-bottom: 8px;
+    color: var(--accent, var(--ink-soft));
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .uv-callout,
+  .uv-alert {
+    margin: 22px 0;
+    padding: 18px 20px;
+    border-radius: 14px;
+  }
+
+  .uv-callout {
+    background: color-mix(in srgb, var(--accent, #0f766e) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent, #0f766e) 35%, transparent);
+  }
+
+  .uv-alert {
+    background: color-mix(in srgb, #dc2626 11%, transparent);
+    border: 1px solid color-mix(in srgb, #dc2626 36%, transparent);
+  }
+
+  .uv-callout p,
+  .uv-alert p {
+    margin: 6px 0 0;
+  }
+
+  .uv-callout__label {
+    color: var(--accent, var(--ink));
+    font-size: 0.75rem;
+    font-weight: 750;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .uv-levels {
+    display: grid;
+    gap: 10px;
+    margin: 18px 0 26px;
+  }
+
+  .uv-level {
+    display: grid;
+    gap: 4px;
+    padding: 13px 15px;
+    border-left: 4px solid currentColor;
+    border-radius: 10px;
+    background: color-mix(in srgb, currentColor 9%, transparent);
+  }
+
+  .uv-level strong {
+    color: currentColor;
+    font-size: 0.95rem;
+  }
+
+  .uv-level span {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .uv-level--low { color: #15803d; }
+  .uv-level--moderate { color: #a16207; }
+  .uv-level--high { color: #c2410c; }
+  .uv-level--very-high { color: #dc2626; }
+  .uv-level--extreme { color: #9f1239; }
+
+  .uv-alert strong {
+    color: #b91c1c;
+  }
+
+  @media (max-width: 640px) {
+    .uv-callout,
+    .uv-alert {
+      padding: 16px;
+    }
   }
 </style>
