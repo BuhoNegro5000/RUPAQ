@@ -3,14 +3,18 @@
   import type { AirInfo } from '$lib/types';
 
   export let uv: number | null;
+  export let uvMax: number | null;
   export let air: AirInfo;
 </script>
 
 <div class="secondary-metrics">
   <div class="metric">
-    <span class="metric__label">UV</span>
+    <span class="metric__label">UV ahora</span>
     <span class="metric__value tabular">{uv == null ? '—' : formatNumber(uv)}</span>
     <span class="metric__tag">{uvCategory(uv)}</span>
+    {#if uvMax != null}
+      <span class="metric__detail">Máx. hoy {formatNumber(uvMax)}</span>
+    {/if}
   </div>
   <span class="metric__rule" aria-hidden="true"></span>
   <div class="metric">
@@ -55,6 +59,13 @@
   }
   .metric__tag {
     font-size: 0.9375rem;
+    color: var(--ink-soft);
+    font-weight: 560;
+    white-space: nowrap;
+  }
+  .metric__detail {
+    flex-basis: 100%;
+    font-size: 0.75rem;
     color: var(--ink-soft);
     font-weight: 560;
     white-space: nowrap;
