@@ -17,7 +17,10 @@
     Share,
     SlidersHorizontal,
     Smartphone,
-    UserRound
+    Sun,
+    ThermometerSun,
+    UserRound,
+    Waves
   } from '@lucide/svelte';
   import LocationHeader from '$lib/components/LocationHeader.svelte';
   import { savedPlaces, selectedLocation } from '$lib/stores/location';
@@ -123,6 +126,39 @@
                 <span class="row-title">Ola de calor y noches</span>
                 <span class="row-sub">Por qué el calor que no baja también enferma</span>
               </span>
+              <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
+            </a>
+          </li>
+          <li>
+            <a class="more-row" href="/mas/calor-y-cambio-climatico">
+              <span class="row-icon" aria-hidden="true"><ThermometerSun size={21} strokeWidth={1.7} /></span>
+              <span class="row-copy">
+                <span class="row-title">El calor y el cambio climático</span>
+                <span class="row-sub">Por qué hay más calor, y qué significa para tu salud</span>
+              </span>
+              <span class="row-badge">IPCC</span>
+              <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
+            </a>
+          </li>
+          <li>
+            <a class="more-row" href="/mas/el-nino-y-calor">
+              <span class="row-icon" aria-hidden="true"><Waves size={21} strokeWidth={1.7} /></span>
+              <span class="row-copy">
+                <span class="row-title">El Niño y el calor</span>
+                <span class="row-sub">Mar caliente, noches cálidas, dengue y alertas del ENFEN</span>
+              </span>
+              <span class="row-badge">ENFEN</span>
+              <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
+            </a>
+          </li>
+          <li>
+            <a class="more-row" href="/mas/radiacion-uv">
+              <span class="row-icon" aria-hidden="true"><Sun size={21} strokeWidth={1.7} /></span>
+              <span class="row-copy">
+                <span class="row-title">Radiación UV y tu piel</span>
+                <span class="row-sub">Índice UV, riesgos para piel y ojos, y cómo protegerte</span>
+              </span>
+              <span class="row-badge">OMS</span>
               <span class="row-chev" aria-hidden="true"><ChevronRight size={19} strokeWidth={1.8} /></span>
             </a>
           </li>

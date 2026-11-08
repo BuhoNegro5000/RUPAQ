@@ -216,7 +216,7 @@
 
         <!-- Secondary metrics: displayed on mobile here, on desktop in right column -->
         <div class="secondary-block mobile-only enter-4">
-          <SecondaryMetrics uv={data.now.uv} air={data.now.air} />
+          <SecondaryMetrics uv={data.now.uv} uvMax={data.daily[0]?.uvMax ?? null} air={data.now.air} />
           <Freshness
             updatedAt={data.freshness.updatedAt}
             stale={data.freshness.stale || $forecastOffline}
@@ -237,7 +237,7 @@
         </div>
 
         <div class="aside-metrics">
-          <SecondaryMetrics uv={data.now.uv} air={data.now.air} />
+          <SecondaryMetrics uv={data.now.uv} uvMax={data.daily[0]?.uvMax ?? null} air={data.now.air} />
           <Freshness
             updatedAt={data.freshness.updatedAt}
             stale={data.freshness.stale || $forecastOffline}

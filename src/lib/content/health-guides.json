@@ -361,6 +361,104 @@
           "texto": "Llama gratis a la Línea 113 opción 5 (MINSA orientación dengue) o al 106 (SAMU) ante sangrado, desmayo o signos de alarma."
         }
       ]
+    },
+    {
+      "slug": "quemadura-solar",
+      "titulo": "Quemadura solar por radiación UV",
+      "resumen": "Piel roja, caliente y dolorosa horas después de estar al sol, aunque estuviera nublado.",
+      "urgencia": "ATENCIÓN",
+      "urgenciaNivel": 2,
+      "icono": "sun",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerla",
+          "titulo": "Piel roja y que arde",
+          "texto": "El enrojecimiento y el dolor aparecen entre 4 y 8 horas después del sol y llegan a su punto máximo a las 24 horas. Puede haber hinchazón y ampollas."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Sal del sol",
+          "texto": "Entra a un lugar fresco o a la sombra. No sigas expuesto aunque ya estés quemado: el daño se suma."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Enfría con agua fresca",
+          "texto": "Usa una ducha o compresas frescas por 10 a 15 minutos. Repite varias veces al día. No pongas hielo directo sobre la piel."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Bebe agua o suero oral",
+          "texto": "La piel quemada pierde líquidos y el cuerpo se deshidrata más rápido, sobre todo si hace calor. Toma sorbos frecuentes."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Hidrata la piel",
+          "texto": "Aplica gel de aloe puro o una crema hidratante suave sobre la piel intacta. Usa ropa suelta de algodón."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No revientes las ampollas",
+          "texto": "No uses mantequilla, pasta dental, aceites ni remedios caseros. No arranques la piel que se descama y no vuelvas al sol hasta que se recupere."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo buscar atención",
+          "titulo": "Acude a un centro de salud",
+          "texto": "Ampollas extensas o en el rostro, fiebre, escalofríos, vómitos, mareo, confusión o signos de deshidratación. En bebés menores de un año consulta siempre. Ante desmayo o confusión, llama al 106."
+        }
+      ]
+    },
+    {
+      "slug": "ojos-por-radiacion-uv",
+      "titulo": "Ojos irritados por el sol",
+      "resumen": "Ardor, lagrimeo y sensación de arenilla horas después de estar al sol, la playa o la nieve.",
+      "urgencia": "ATENCIÓN",
+      "urgenciaNivel": 2,
+      "icono": "eye",
+      "pasos": [
+        {
+          "kind": "recognize",
+          "label": "Cómo reconocerlo",
+          "titulo": "Ardor, lagrimeo y luz que molesta",
+          "texto": "La radiación UV puede quemar la córnea (fotoqueratitis). Los síntomas aparecen entre 6 y 12 horas después: ojos rojos, sensación de arenilla, dolor y molestia intensa con la luz."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Descansa en un lugar oscuro",
+          "texto": "Permanece en un ambiente con poca luz y mantén los ojos cerrados o cubiertos con un paño limpio y fresco."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Compresas frías",
+          "texto": "Coloca compresas frescas y limpias sobre los párpados cerrados por 10 a 15 minutos, varias veces."
+        },
+        {
+          "kind": "do",
+          "label": "Qué hacer ahora",
+          "titulo": "Lágrimas artificiales",
+          "texto": "Si tienes lágrimas artificiales sin conservantes, úsalas para aliviar la sequedad. Quita los lentes de contacto y no los uses hasta que mejore."
+        },
+        {
+          "kind": "dont",
+          "label": "Qué no hacer",
+          "titulo": "No te frotes los ojos",
+          "texto": "No uses gotas de farmacia sin indicación, ni remedios caseros como té, leche o limón. Frotar puede lastimar más la córnea."
+        },
+        {
+          "kind": "call",
+          "label": "Cuándo buscar atención",
+          "titulo": "Consulta con un oftalmólogo",
+          "texto": "Si el dolor es fuerte, ves borroso, no mejora en 24 horas o hay secreción. La mayoría se recupera en uno o dos días, pero necesita evaluación para confirmar que la córnea sane."
+        }
+      ]
     }
   ]
 }

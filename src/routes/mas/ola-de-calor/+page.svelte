@@ -38,9 +38,47 @@
           Por eso Rupaq usa umbrales distintos según la zona climática y la altitud del distrito.
         </p>
         <p>
+          Los servicios meteorológicos suelen reconocerla cuando varios días seguidos, a menudo tres o
+          más, superan lo normal para ese lugar y esa época del año. Una ola puede ser de día, de noche
+          o de ambos.
+        </p>
+        <p>
           Lo que importa no es solo la temperatura del aire. La humedad cambia cuánto puede enfriarse
           el cuerpo por el sudor. Por eso mostramos la <strong>sensación térmica</strong>, calculada con
           el índice de calor.
+        </p>
+        <p>
+          Con el cambio climático, estas olas se vuelven más frecuentes y duran más.
+          <a href="/mas/calor-y-cambio-climatico">Conoce la relación entre calor y cambio climático</a>.
+        </p>
+      </section>
+
+      <section aria-labelledby="effects-title">
+        <h2 id="effects-title">Cómo el calor extremo afecta la salud</h2>
+        <p>
+          El calor extremo no solo causa golpe de calor. También agrava otras enfermedades y altera los
+          servicios de los que dependemos. Hay efectos directos en el cuerpo y efectos indirectos en
+          nuestro entorno.
+        </p>
+        <figure class="effects-figure">
+          <div class="effects-figure__scroll" tabindex="0" role="group" aria-label="Esquema de efectos del calor extremo, desplázate para verlo completo">
+            <img
+              src="/images/efectos-calor-extremo.png"
+              width="1894"
+              height="830"
+              loading="lazy"
+              decoding="async"
+              alt="Esquema del calor extremo con sus efectos indirectos y directos en la salud. Indirectos: mayor transmisión de algunas enfermedades, impactos en los servicios y centros de salud, interrupciones en infraestructuras críticas y sistemas tecnológicos, impactos en los ecosistemas como sequías, incendios y mala calidad del aire, y efectos asociados a cambios en el comportamiento, incluido un mayor riesgo de accidentes. Directos: agravamiento de afecciones preexistentes y efectos en la salud mental, enfermedades por calor y golpe de calor, hospitalización y muerte."
+            />
+          </div>
+          <figcaption>
+            Efectos directos e indirectos del calor extremo en la salud.
+            <span class="effects-figure__source">Fuente: WHO TEAM</span>
+          </figcaption>
+        </figure>
+        <p>
+          Por eso protegerse del calor no es solo evitar el golpe de calor: también es cuidar a quienes
+          ya tienen una enfermedad y prevenir accidentes cuando hay cansancio, mal sueño o irritabilidad.
         </p>
       </section>
 
@@ -120,8 +158,22 @@
         </p>
       </section>
 
+      <section aria-labelledby="uv-title">
+        <h2 id="uv-title">El sol también daña: radiación UV</h2>
+        <p>
+          En días de calor, la radiación ultravioleta puede quemar la piel y los ojos aunque haya nubes
+          o viento. Conoce el índice UV de hoy, cómo protegerte y qué hacer si te quemaste.
+        </p>
+      </section>
+
       <nav aria-label="Siguientes pasos">
         <ul class="reading-links">
+          <li>
+            <a href="/mas/calor-y-cambio-climatico">El calor y el cambio climático <ChevronRight size={18} aria-hidden="true" /></a>
+          </li>
+          <li>
+            <a href="/mas/radiacion-uv">Riesgos por exposición a radiación ultravioleta <ChevronRight size={18} aria-hidden="true" /></a>
+          </li>
           <li>
             <a href="/mas/dengue-y-clima">Dengue, agua almacenada y datos CDC/MINSA <ChevronRight size={18} aria-hidden="true" /></a>
           </li>
@@ -148,5 +200,42 @@
 <style>
   .pull-stat {
     margin-top: 18px;
+  }
+
+  .effects-figure {
+    margin: 18px 0 0;
+  }
+
+  .effects-figure__scroll {
+    overflow-x: auto;
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .effects-figure__scroll:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+  }
+
+  .effects-figure img {
+    display: block;
+    width: 100%;
+    min-width: 680px;
+    height: auto;
+  }
+
+  .effects-figure figcaption {
+    margin-top: 8px;
+    color: var(--ink-mute);
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .effects-figure__source {
+    display: block;
+    margin-top: 2px;
+    font-weight: 600;
   }
 </style>

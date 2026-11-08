@@ -1,5 +1,15 @@
 <script lang="ts">
-  import { Bug, CloudSun, Droplets, HeartPulse, Sparkles, ThermometerSun, Zap } from '@lucide/svelte';
+  import {
+    Bug,
+    CloudSun,
+    Droplets,
+    Eye,
+    HeartPulse,
+    Sparkles,
+    Sun,
+    ThermometerSun,
+    Zap
+  } from '@lucide/svelte';
 
   export let name: string;
   export let size = 26;
@@ -12,7 +22,9 @@
     zap: Zap,
     sparkles: Sparkles,
     'heart-pulse': HeartPulse,
-    bug: Bug
+    bug: Bug,
+    sun: Sun,
+    eye: Eye
   } as const;
 </script>
 
